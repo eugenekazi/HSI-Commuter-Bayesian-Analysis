@@ -1,0 +1,179 @@
+---
+title: "Bayesian Estimation of First-Year Retention Rates: A Comparative Analysis of Commuter and Hispanic-Serving Institutions in Texas"
+author: "Eugene, Shikyna, Rehana"
+format: revealjs
+editor: visual
+---
+
+# Bayesian Estimation of First-Year Retention Rates: A Comparative Analysis of Commuter and Hispanic-Serving Institutions in Texas 
+
+## Setup & data preparation
+
+```{r}
+library(tidyverse)
+library(rjags)
+library(coda)
+library(bayesplot)
+library(knitr)
+library(kableExtra)
+```
+
+```{r}
+y22 <- read_csv("Bayes CommuterHSI Data/2223.csv")
+y23 <- read_csv("Bayes CommuterHSI Data/2324.csv")
+y24 <- read_csv("Bayes CommuterHSI Data/2425.csv")
+hsi22 <- read_csv("Bayes CommuterHSI Data/HSI22.csv")
+hsi23 <- read_csv("Bayes CommuterHSI Data/HSI23.csv")
+hsi24 <- read_csv("Bayes CommuterHSI Data/HSI24.csv")
+```
+
+```{r}
+y22 <- y22 %>%
+  select(-starts_with("CUSTOMCGIDS"), -'institution name...4', -'HD2022.State abbreviation') %>% distinct()
+y23 <- y23 %>%
+  select(-starts_with("CUSTOMCGIDS"), -'institution name...4', -'HD2023.State abbreviation') %>% distinct()
+y24 <- y24 %>%
+  select(-starts_with("CUSTOMCGIDS"), -'institution name...4', -'HD2024.State abbreviation', -'XROOMCAP', -'XRET_PCF', -'XRET_NMF', -'XRRFTCTA') %>% distinct()
+
+hsi22 <- hsi22 %>% 
+  select(-'IDX_EF', -'EF2022A.Level of student')
+hsi23 <- hsi23 %>% 
+  select(-'IDX_EF', -'EF2023A.Level of student')
+hsi24 <- hsi24 %>% 
+  select(-'IDX_EF', -'EF2024A.Level of student')
+
+y22 <- y22 %>% rename('name' = 'institution name...2', 'housing' = 'IC2022.Institution provide on-campus housing', 'dorm_cap' = 'IC2022.Total dormitory capacity', 'cohort21' = 'EF2022D_RV.Full-time adjusted fall 2021 cohort', 'return_cohort22' = 'EF2022D_RV.Students from the full-time adjusted fall 2021 cohort enrolled in fall 2022', 'ret_rate' = 'EF2022D_RV.Full-time retention rate, 2022')
+
+y23 <- y23 %>% rename('name' = 'institution name...2', 'housing' = 'IC2023.Institution provide nstitutionally-controlled housing (on-campus and/or off-campus)', 'dorm_cap' = 'IC2023.Housing capacity', 'cohort22' = 'EF2023D_RV.Full-time adjusted fall 2022 cohort', 'return_cohort23' = 'EF2023D_RV.Students from the full-time adjusted fall 2022 cohort enrolled in fall 2023', 'ret_rate' = 'EF2023D_RV.Full-time retention rate, 2023')
+
+y24 <- y24 %>% rename('name' = 'institution name...2', 'housing' = 'COST1_2024.Institution provide Institutionally-controlled housing (on-campus and/or off-campus)', 'dorm_cap' = 'COST1_2024.Housing capacity', 'cohort23' = 'EF2024D.Full-time adjusted fall 2023 cohort', 'return_cohort23' = 'EF2024D.Students from the full-time adjusted fall 2023 cohort enrolled in fall 2024', 'ret_rate' = 'EF2024D.Full-time retention rate, 2024')
+
+```
+
+I believe the data only gave the previous year's adjusted cohort. Let's discuss what we want to do about this.
+
+## Classify institutions: HSI & Commuter Status
+
+```{r}
+
+```
+
+## Descriptive Summary
+
+```{r}
+
+```
+
+# Part 1: Conjugate Beta-Binomial Analysis (base model)
+
+The baseline model pools all students within each of the four groups
+
+$$k_g \mid n_g, \theta_g \sim \text{Binomial}(n_g, \theta_g)$$
+
+$$\theta_g \sim \text{Beta}(\alpha_0, \beta_0)$$
+
+The conjugate posterior would be:
+
+$$\theta_g \mid k_g \sim \text{Beta}(\alpha_0 + k_g, \beta_0 + n_g - k_g)$$
+
+**From Lectures: 7, 9**
+
+## Pool the data into groups
+
+We would group each and find retained cohort by year using summarize.
+
+## Test three prior choices for sensitivity analysis
+
+We can test;
+
+Uninformative: Beta (1, 1) - Completely flat prior
+
+Weakly Informative: Beta (2, 2) - Slight pull to 0.5
+
+Informative: Beta (8, 2) - Centered around 81% national average
+
+\*Make sure to include credible intervals
+
+**From lectures: 4, 9, 10**
+
+## Compute posteriors under each prior
+
+## Plot posterior densities (main prior)
+
+## Posterior probability statements
+
+Such as probability HSI-Commuter group has lower retention than residential groups
+
+# Part 2: Hierachical Binomial-Beta Model (Main Analysis)
+
+Because retention is a count of successes out of a fixed cohort, we use the Binomial likelihood with a conjugate Beta prior rather than the Normal-Normal hierarchy from class (l18).
+
+The conjugate model we used assumes all the institutions within a group share the same retention probability, which is kind of unrealistic. The heirachical model allows each institution (i) have its own (theta_i), but institutions within the same group (g) share a common Beta distribution:
+
+$$\text{Layer 1 (likelihood):} \quad k_i \mid n_i, \theta_i \sim \text{Binomial}(n_i, \theta_i)$$
+
+$$\text{Layer 2 (prior):} \quad \theta_i \mid \alpha_{g[i]}, \beta_{g[i]} \sim \text{Beta}(\alpha_{g[i]}, \beta_{g[i]})$$
+
+$$\text{Layer 3 (hyperprior):} \quad \mu_g \sim \text{Beta}(8, 2), \quad \kappa_g \sim \text{Gamma}(2, 0.5) + 2$$
+
+where $\alpha_g = \mu_g \kappa_g$ and $\beta_g = (1 - \mu_g) \kappa_g$. This reparameterization makes $\mu_g$ the group mean and $\kappa_g$ a concentration parameter (larger = tighter around the group mean).
+
+We chose the nation average for the Beta prior with concentration around 80%.
+
+We chose Gamma with a mean of 4 to allow kappa to range broadly. I also seen that sometimes it is recommended to add a constant, because Beta distributions with a value less than 1 are U-shaped, which wouldn't make sense with retention rates.
+
+**From lectures: 17, 18, 19**
+
+## Prepare data for JAGS
+
+## JAGS model
+
+**From lectures: 8, 16**
+
+## Compile and fit
+
+```{r}
+# model <- 
+
+# update()
+
+# posterior_sample
+```
+
+## If we're doing MCMC, we do that now
+
+**From lectures: 16**
+
+## Group-level posterior summaries
+
+\*Make sure to include credible intervals for each group's hyperparameter mean using quantile(mu_samples, c(0.025, 0.975))
+
+## Institution-level posteriors / shrinkage
+
+\*Make sure to include credible intervals. This is where the smaller schools will have their intervals pulled toward the group mean more than larger schools.
+
+## Posterior probability statements from the hierarchical model
+
+# Part 3: Model Comparison
+
+Compare conjugate pooled posteriors against hierarchical group-level posteriors for the same four groups. The hierarchical intervals will be wider for small groups (appropriate acknowledgment of institutional heterogeneity) and may shift means slightly toward the overall data pattern.
+
+\*Make sure to include credible intervals from conjugate and hierarchical models
+
+**From lectures: 17, 19**
+
+# Conclusion:
+
+Points to hit:
+
+-   Key findings on HSI vs non-HSI and commuter vs residential retention
+-   Specifically what the posteriors say about institutions like UHD
+-   The value added by the hierarchical model (shrinkage, institutional heterogeneity)
+-   Limitations: single year, institution-level aggregation ignores student-level predictors, etc.
+-   Future directions: multi-year trend, student-level data, additional covariates
+
+**From lectures: 5** - has good language on interpretations
+
+# References
+
+IPEDS

@@ -1,0 +1,1124 @@
+"unitid","institution name","year","institution name","HD2022.State abbreviation","IC2022.Institution provide on-campus housing","IC2022.Total dormitory capacity","CUSTOMCGIDS2022.Institution ID (IPEDSID) of comparison institution","CUSTOMCGIDS2022.Institution (entity) name of comparison institution","IC2022_PCCAMPUSES.Sector of institution","EF2022D_RV.Full-time adjusted fall 2021 cohort","EF2022D_RV.Students from the full-time adjusted fall 2021 cohort enrolled in fall 2022","EF2022D_RV.Full-time retention rate, 2022"
+"222567","Alvin Community College","2022","Alvin Community College","Texas","No",,"223506","Brazosport College",,"303","186","61"
+"222567","Alvin Community College","2022","Alvin Community College","Texas","No",,"224961","Galveston College",,"303","186","61"
+"222567","Alvin Community College","2022","Alvin Community College","Texas","No",,"225423","Houston Community College",,"303","186","61"
+"222567","Alvin Community College","2022","Alvin Community College","Texas","No",,"226204","Lee College",,"303","186","61"
+"222567","Alvin Community College","2022","Alvin Community College","Texas","No",,"226408","College of the Mainland",,"303","186","61"
+"222567","Alvin Community College","2022","Alvin Community College","Texas","No",,"227182","Lone Star College System",,"303","186","61"
+"222567","Alvin Community College","2022","Alvin Community College","Texas","No",,"227979","San Jacinto Community College",,"303","186","61"
+"222567","Alvin Community College","2022","Alvin Community College","Texas","No",,"229841","Wharton County Junior College",,"303","186","61"
+"222831","Angelo State University","2022","Angelo State University","Texas","Yes","2011","110486","California State University-Bakersfield",,"1267","928","73"
+"222831","Angelo State University","2022","Angelo State University","Texas","Yes","2011","128106","Colorado State University Pueblo",,"1267","928","73"
+"222831","Angelo State University","2022","Angelo State University","Texas","Yes","2011","155025","Emporia State University",,"1267","928","73"
+"222831","Angelo State University","2022","Angelo State University","Texas","Yes","2011","157401","Murray State University",,"1267","928","73"
+"222831","Angelo State University","2022","Angelo State University","Texas","Yes","2011","181215","University of Nebraska at Kearney",,"1267","928","73"
+"222831","Angelo State University","2022","Angelo State University","Texas","Yes","2011","185129","New Jersey City University",,"1267","928","73"
+"222831","Angelo State University","2022","Angelo State University","Texas","Yes","2011","187648","Eastern New Mexico University-Main Campus",,"1267","928","73"
+"222831","Angelo State University","2022","Angelo State University","Texas","Yes","2011","206914","Cameron University",,"1267","928","73"
+"222831","Angelo State University","2022","Angelo State University","Texas","Yes","2011","224554","Texas A & M University-Commerce",,"1267","928","73"
+"222831","Angelo State University","2022","Angelo State University","Texas","Yes","2011","226833","Midwestern State University",,"1267","928","73"
+"222831","Angelo State University","2022","Angelo State University","Texas","Yes","2011","228529","Tarleton State University",,"1267","928","73"
+"222831","Angelo State University","2022","Angelo State University","Texas","Yes","2011","228705","Texas A & M University-Kingsville",,"1267","928","73"
+"222831","Angelo State University","2022","Angelo State University","Texas","Yes","2011","228802","The University of Texas at Tyler",,"1267","928","73"
+"222831","Angelo State University","2022","Angelo State University","Texas","Yes","2011","229018","The University of Texas Permian Basin",,"1267","928","73"
+"222831","Angelo State University","2022","Angelo State University","Texas","Yes","2011","229814","West Texas A & M University",,"1267","928","73"
+"222992","Austin Community College District","2022","Austin Community College District","Texas","No",,"105525","Pima Community College",,"0","0",
+"222992","Austin Community College District","2022","Austin Community College District","Texas","No",,"109208","American River College",,"0","0",
+"222992","Austin Community College District","2022","Austin Community College District","Texas","No",,"132709","Broward College",,"0","0",
+"222992","Austin Community College District","2022","Austin Community College District","Texas","No",,"138187","Valencia College",,"0","0",
+"222992","Austin Community College District","2022","Austin Community College District","Texas","No",,"225423","Houston Community College",,"0","0",
+"222992","Austin Community College District","2022","Austin Community College District","Texas","No",,"227182","Lone Star College System",,"0","0",
+"222992","Austin Community College District","2022","Austin Community College District","Texas","No",,"228547","Tarrant County College District",,"0","0",
+"223506","Brazosport College","2022","Brazosport College","Texas","No",,"222567","Alvin Community College",,"0","0",
+"223506","Brazosport College","2022","Brazosport College","Texas","No",,"224961","Galveston College",,"0","0",
+"223506","Brazosport College","2022","Brazosport College","Texas","No",,"226204","Lee College",,"0","0",
+"223506","Brazosport College","2022","Brazosport College","Texas","No",,"226408","College of the Mainland",,"0","0",
+"223506","Brazosport College","2022","Brazosport College","Texas","No",,"229540","Victoria College",,"0","0",
+"223506","Brazosport College","2022","Brazosport College","Texas","No",,"229841","Wharton County Junior College",,"0","0",
+"224147","Texas A & M University-Corpus Christi","2022","Texas A & M University-Corpus Christi","Texas","Yes","2826","102094","University of South Alabama",,"1712","1076","63"
+"224147","Texas A & M University-Corpus Christi","2022","Texas A & M University-Corpus Christi","Texas","Yes","2826","106245","University of Arkansas at Little Rock",,"1712","1076","63"
+"224147","Texas A & M University-Corpus Christi","2022","Texas A & M University-Corpus Christi","Texas","Yes","2826","138354","The University of West Florida",,"1712","1076","63"
+"224147","Texas A & M University-Corpus Christi","2022","Texas A & M University-Corpus Christi","Texas","Yes","2826","160658","University of Louisiana at Lafayette",,"1712","1076","63"
+"224147","Texas A & M University-Corpus Christi","2022","Texas A & M University-Corpus Christi","Texas","Yes","2826","163453","Morgan State University",,"1712","1076","63"
+"224147","Texas A & M University-Corpus Christi","2022","Texas A & M University-Corpus Christi","Texas","Yes","2826","166638","University of Massachusetts-Boston",,"1712","1076","63"
+"224147","Texas A & M University-Corpus Christi","2022","Texas A & M University-Corpus Christi","Texas","Yes","2826","178420","University of Missouri-St Louis",,"1712","1076","63"
+"224147","Texas A & M University-Corpus Christi","2022","Texas A & M University-Corpus Christi","Texas","Yes","2826","199102","North Carolina A & T State University",,"1712","1076","63"
+"224147","Texas A & M University-Corpus Christi","2022","Texas A & M University-Corpus Christi","Texas","Yes","2826","199139","University of North Carolina at Charlotte",,"1712","1076","63"
+"224147","Texas A & M University-Corpus Christi","2022","Texas A & M University-Corpus Christi","Texas","Yes","2826","220978","Middle Tennessee State University",,"1712","1076","63"
+"224147","Texas A & M University-Corpus Christi","2022","Texas A & M University-Corpus Christi","Texas","Yes","2826","221838","Tennessee State University",,"1712","1076","63"
+"224147","Texas A & M University-Corpus Christi","2022","Texas A & M University-Corpus Christi","Texas","Yes","2826","228459","Texas State University",,"1712","1076","63"
+"224147","Texas A & M University-Corpus Christi","2022","Texas A & M University-Corpus Christi","Texas","Yes","2826","229027","The University of Texas at San Antonio",,"1712","1076","63"
+"224147","Texas A & M University-Corpus Christi","2022","Texas A & M University-Corpus Christi","Texas","Yes","2826","240453","University of Wisconsin-Milwaukee",,"1712","1076","63"
+"224147","Texas A & M University-Corpus Christi","2022","Texas A & M University-Corpus Christi","Texas","Yes","2826","433660","Florida Gulf Coast University",,"1712","1076","63"
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"104708","Glendale Community College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"105428","Phoenix College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"113573","College of the Desert",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"115393","Hartnell College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"115861","Imperial Valley College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"117052","Reedley College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"117867","Los Angeles Mission College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"118718","Merced College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"123217","College of the Sequoias",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"123527","San Bernardino Valley College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"124113","Taft College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"125028","Ventura College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"125091","Victor Valley College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"127884","Pueblo Community College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"138187","Valencia College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"144193","City Colleges of Chicago-Richard J Daley College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"144944","Elgin Community College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"147411","Morton College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"186034","Passaic County Community College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"187198","Union County College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"187532","Central New Mexico Community College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"190530","CUNY Bronx Community College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"222567","Alvin Community College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"222576","Amarillo College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"222992","Austin Community College District",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"223320","Coastal Bend College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"223427","Blinn College District",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"223816","Central Texas College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"224615","Dallas College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"226134","Laredo College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"226204","Lee College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"226578","McLennan Community College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"227182","Lone Star College System",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"227854","St Philip's College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"227924","San Antonio College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"227979","San Jacinto Community College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"228158","South Plains College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"228316","Southwest Texas Junior College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"228547","Tarrant County College District",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"229355","Tyler Junior College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"229540","Victoria College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"229841","Wharton County Junior College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"246354","Palo Alto College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"409315","South Texas College",,"0","0",
+"224350","Del Mar College","2022","Del Mar College","Texas","No",,"420398","Northwest Vista College",,"0","0",
+"224545","Texas A&M University-Texarkana","2022","Texas A&M University-Texarkana","Texas","Yes","294",,,,"217","136","63"
+"224554","Texas A & M University-Commerce","2022","Texas A & M University-Commerce","Texas","Yes","2300","138354","The University of West Florida",,"772","502","65"
+"224554","Texas A & M University-Commerce","2022","Texas A & M University-Commerce","Texas","Yes","2300","142276","Idaho State University",,"772","502","65"
+"224554","Texas A & M University-Commerce","2022","Texas A & M University-Commerce","Texas","Yes","2300","169798","Eastern Michigan University",,"772","502","65"
+"224554","Texas A & M University-Commerce","2022","Texas A & M University-Commerce","Texas","Yes","2300","179557","Southeast Missouri State University",,"772","502","65"
+"224554","Texas A & M University-Commerce","2022","Texas A & M University-Commerce","Texas","Yes","2300","199148","University of North Carolina at Greensboro",,"772","502","65"
+"224554","Texas A & M University-Commerce","2022","Texas A & M University-Commerce","Texas","Yes","2300","220075","East Tennessee State University",,"772","502","65"
+"224554","Texas A & M University-Commerce","2022","Texas A & M University-Commerce","Texas","Yes","2300","224147","Texas A & M University-Corpus Christi",,"772","502","65"
+"224554","Texas A & M University-Commerce","2022","Texas A & M University-Commerce","Texas","Yes","2300","227881","Sam Houston State University",,"772","502","65"
+"224554","Texas A & M University-Commerce","2022","Texas A & M University-Commerce","Texas","Yes","2300","228431","Stephen F Austin State University",,"772","502","65"
+"224554","Texas A & M University-Commerce","2022","Texas A & M University-Commerce","Texas","Yes","2300","228529","Tarleton State University",,"772","502","65"
+"224554","Texas A & M University-Commerce","2022","Texas A & M University-Commerce","Texas","Yes","2300","228705","Texas A & M University-Kingsville",,"772","502","65"
+"224615","Dallas College","2022","Dallas College","Texas","No",,,,,"16","12","75"
+"224961","Galveston College","2022","Galveston College","Texas","Yes","130",,,,"0","0",
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","222567","Alvin Community College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","222576","Amarillo College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","222822","Angelina College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","222992","Austin Community College District",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","223320","Coastal Bend College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","223427","Blinn College District",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","223816","Central Texas College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","223898","Cisco College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","223922","Clarendon College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","224110","North Central Texas College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","224350","Del Mar College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","224615","Dallas College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","224642","El Paso Community College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","224891","Frank Phillips College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","224961","Galveston College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","225308","Trinity Valley Community College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","225371","Hill College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","225423","Houston Community College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","225520","Howard College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","226019","Kilgore College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","226107","Lamar State College-Orange",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","226116","Lamar State College-Port Arthur",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","226134","Laredo College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","226204","Lee College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","226408","College of the Mainland",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","226578","McLennan Community College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","227146","Navarro College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","227182","Lone Star College System",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","227225","Northeast Texas Community College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","227304","Odessa College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","227386","Panola College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","227401","Paris Junior College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","227687","Ranger College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","227854","St Philip's College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","227924","San Antonio College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","227979","San Jacinto Community College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","228158","South Plains College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","228316","Southwest Texas Junior College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","228547","Tarrant County College District",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","228608","Temple College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","228699","Texarkana College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","229355","Tyler Junior College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","229504","Vernon College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","229540","Victoria College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","229799","Weatherford College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","229832","Western Texas College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","229841","Wharton County Junior College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","246354","Palo Alto College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","247834","Collin County Community College District",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","382911","Southwest College for the Deaf",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","420398","Northwest Vista College",,"3","2","67"
+"225070","Grayson College","2022","Grayson College","Texas","Yes","203","441760","Lamar Institute of Technology",,"3","2","67"
+"225308","Trinity Valley Community College","2022","Trinity Valley Community College","Texas","Yes","500","153630","Iowa Western Community College",,"0","0",
+"225308","Trinity Valley Community College","2022","Trinity Valley Community College","Texas","Yes","500","154697","Barton County Community College",,"0","0",
+"225308","Trinity Valley Community College","2022","Trinity Valley Community College","Texas","Yes","500","155195","Hutchinson Community College",,"0","0",
+"225308","Trinity Valley Community College","2022","Trinity Valley Community College","Texas","Yes","500","158431","Bossier Parish Community College",,"0","0",
+"225308","Trinity Valley Community College","2022","Trinity Valley Community College","Texas","Yes","500","175810","Holmes Community College",,"0","0",
+"225308","Trinity Valley Community College","2022","Trinity Valley Community College","Texas","Yes","500","200305","North Dakota State College of Science",,"0","0",
+"225308","Trinity Valley Community College","2022","Trinity Valley Community College","Texas","Yes","500","222567","Alvin Community College",,"0","0",
+"225308","Trinity Valley Community College","2022","Trinity Valley Community College","Texas","Yes","500","222576","Amarillo College",,"0","0",
+"225308","Trinity Valley Community College","2022","Trinity Valley Community College","Texas","Yes","500","223816","Central Texas College",,"0","0",
+"225308","Trinity Valley Community College","2022","Trinity Valley Community College","Texas","Yes","500","225070","Grayson College",,"0","0",
+"225308","Trinity Valley Community College","2022","Trinity Valley Community College","Texas","Yes","500","225371","Hill College",,"0","0",
+"225308","Trinity Valley Community College","2022","Trinity Valley Community College","Texas","Yes","500","225520","Howard College",,"0","0",
+"225308","Trinity Valley Community College","2022","Trinity Valley Community College","Texas","Yes","500","226019","Kilgore College",,"0","0",
+"225308","Trinity Valley Community College","2022","Trinity Valley Community College","Texas","Yes","500","226134","Laredo College",,"0","0",
+"225308","Trinity Valley Community College","2022","Trinity Valley Community College","Texas","Yes","500","227146","Navarro College",,"0","0",
+"225308","Trinity Valley Community College","2022","Trinity Valley Community College","Texas","Yes","500","227225","Northeast Texas Community College",,"0","0",
+"225308","Trinity Valley Community College","2022","Trinity Valley Community College","Texas","Yes","500","227386","Panola College",,"0","0",
+"225308","Trinity Valley Community College","2022","Trinity Valley Community College","Texas","Yes","500","227401","Paris Junior College",,"0","0",
+"225308","Trinity Valley Community College","2022","Trinity Valley Community College","Texas","Yes","500","228158","South Plains College",,"0","0",
+"225308","Trinity Valley Community College","2022","Trinity Valley Community College","Texas","Yes","500","229504","Vernon College",,"0","0",
+"225308","Trinity Valley Community College","2022","Trinity Valley Community College","Texas","Yes","500","229799","Weatherford College",,"0","0",
+"225308","Trinity Valley Community College","2022","Trinity Valley Community College","Texas","Yes","500","229841","Wharton County Junior College",,"0","0",
+"225308","Trinity Valley Community College","2022","Trinity Valley Community College","Texas","Yes","500","240620","Laramie County Community College",,"0","0",
+"225414","University of Houston-Clear Lake","2022","University of Houston-Clear Lake","Texas","Yes","559","126580","University of Colorado Colorado Springs",,"263","175","67"
+"225414","University of Houston-Clear Lake","2022","University of Houston-Clear Lake","Texas","Yes","559","138354","The University of West Florida",,"263","175","67"
+"225414","University of Houston-Clear Lake","2022","University of Houston-Clear Lake","Texas","Yes","559","145336","Governors State University",,"263","175","67"
+"225414","University of Houston-Clear Lake","2022","University of Houston-Clear Lake","Texas","Yes","559","148654","University of Illinois Springfield",,"263","175","67"
+"225414","University of Houston-Clear Lake","2022","University of Houston-Clear Lake","Texas","Yes","559","151342","Indiana University-South Bend",,"263","175","67"
+"225414","University of Houston-Clear Lake","2022","University of Houston-Clear Lake","Texas","Yes","559","161873","University of Baltimore",,"263","175","67"
+"225414","University of Houston-Clear Lake","2022","University of Houston-Clear Lake","Texas","Yes","559","165820","Fitchburg State University",,"263","175","67"
+"225414","University of Houston-Clear Lake","2022","University of Houston-Clear Lake","Texas","Yes","559","171137","University of Michigan-Dearborn",,"263","175","67"
+"225414","University of Houston-Clear Lake","2022","University of Houston-Clear Lake","Texas","Yes","559","224147","Texas A & M University-Corpus Christi",,"263","175","67"
+"225423","Houston Community College","2022","Houston Community College","Texas","No",,"105154","Mesa Community College",,"3646","2280","63"
+"225423","Houston Community College","2022","Houston Community College","Texas","No",,"105525","Pima Community College",,"3646","2280","63"
+"225423","Houston Community College","2022","Houston Community College","Texas","No",,"117788","Los Angeles City College",,"3646","2280","63"
+"225423","Houston Community College","2022","Houston Community College","Texas","No",,"121901","Riverside City College",,"3646","2280","63"
+"225423","Houston Community College","2022","Houston Community College","Texas","No",,"134495","Hillsborough Community College",,"3646","2280","63"
+"225423","Houston Community College","2022","Houston Community College","Texas","No",,"144184","City Colleges of Chicago-Harry S Truman College",,"3646","2280","63"
+"225423","Houston Community College","2022","Houston Community College","Texas","No",,"163426","Montgomery College",,"3646","2280","63"
+"225423","Houston Community College","2022","Houston Community College","Texas","No",,"187532","Central New Mexico Community College",,"3646","2280","63"
+"225423","Houston Community College","2022","Houston Community College","Texas","No",,"190521","CUNY Borough of Manhattan Community College",,"3646","2280","63"
+"225423","Houston Community College","2022","Houston Community College","Texas","No",,"202356","Cuyahoga Community College District",,"3646","2280","63"
+"225423","Houston Community College","2022","Houston Community College","Texas","No",,"222992","Austin Community College District",,"3646","2280","63"
+"225423","Houston Community College","2022","Houston Community College","Texas","No",,"224642","El Paso Community College",,"3646","2280","63"
+"225423","Houston Community College","2022","Houston Community College","Texas","No",,"227182","Lone Star College System",,"3646","2280","63"
+"225423","Houston Community College","2022","Houston Community College","Texas","No",,"227924","San Antonio College",,"3646","2280","63"
+"225423","Houston Community College","2022","Houston Community College","Texas","No",,"227979","San Jacinto Community College",,"3646","2280","63"
+"225423","Houston Community College","2022","Houston Community College","Texas","No",,"228547","Tarrant County College District",,"3646","2280","63"
+"225423","Houston Community College","2022","Houston Community College","Texas","No",,"232946","Northern Virginia Community College",,"3646","2280","63"
+"225432","University of Houston-Downtown","2022","University of Houston-Downtown","Texas","No",,"110547","California State University-Dominguez Hills",,"1136","740","65"
+"225432","University of Houston-Downtown","2022","University of Houston-Downtown","Texas","No",,"110574","California State University-East Bay",,"1136","740","65"
+"225432","University of Houston-Downtown","2022","University of Houston-Downtown","Texas","No",,"139311","Clayton  State University",,"1136","740","65"
+"225432","University of Houston-Downtown","2022","University of Houston-Downtown","Texas","No",,"139366","Columbus State University",,"1136","740","65"
+"225432","University of Houston-Downtown","2022","University of Houston-Downtown","Texas","No",,"174020","Metropolitan State University",,"1136","740","65"
+"225432","University of Houston-Downtown","2022","University of Houston-Downtown","Texas","No",,"185129","New Jersey City University",,"1136","740","65"
+"225432","University of Houston-Downtown","2022","University of Houston-Downtown","Texas","No",,"190691","CUNY York College",,"1136","740","65"
+"225432","University of Houston-Downtown","2022","University of Houston-Downtown","Texas","No",,"218724","Coastal Carolina University",,"1136","740","65"
+"225432","University of Houston-Downtown","2022","University of Houston-Downtown","Texas","No",,"219602","Austin Peay State University",,"1136","740","65"
+"225432","University of Houston-Downtown","2022","University of Houston-Downtown","Texas","No",,"222831","Angelo State University",,"1136","740","65"
+"225432","University of Houston-Downtown","2022","University of Houston-Downtown","Texas","No",,"490805","Purdue University Northwest",,"1136","740","65"
+"225502","University of Houston-Victoria","2022","University of Houston-Victoria","Texas","Yes","940","100830","Auburn University at Montgomery",,"129","77","60"
+"225502","University of Houston-Victoria","2022","University of Houston-Victoria","Texas","Yes","940","101587","University of West Alabama",,"129","77","60"
+"225502","University of Houston-Victoria","2022","University of Houston-Victoria","Texas","Yes","940","175616","Delta State University",,"129","77","60"
+"225502","University of Houston-Victoria","2022","University of Houston-Victoria","Texas","Yes","940","181534","Peru State College",,"129","77","60"
+"225502","University of Houston-Victoria","2022","University of Houston-Victoria","Texas","Yes","940","188304","Western New Mexico University",,"129","77","60"
+"225502","University of Houston-Victoria","2022","University of Houston-Victoria","Texas","Yes","940","207041","East Central University",,"129","77","60"
+"225502","University of Houston-Victoria","2022","University of Houston-Victoria","Texas","Yes","940","222831","Angelo State University",,"129","77","60"
+"225502","University of Houston-Victoria","2022","University of Houston-Victoria","Texas","Yes","940","224545","Texas A&M University-Texarkana",,"129","77","60"
+"225502","University of Houston-Victoria","2022","University of Houston-Victoria","Texas","Yes","940","225414","University of Houston-Clear Lake",,"129","77","60"
+"225502","University of Houston-Victoria","2022","University of Houston-Victoria","Texas","Yes","940","225432","University of Houston-Downtown",,"129","77","60"
+"225502","University of Houston-Victoria","2022","University of Houston-Victoria","Texas","Yes","940","226833","Midwestern State University",,"129","77","60"
+"225502","University of Houston-Victoria","2022","University of Houston-Victoria","Texas","Yes","940","228501","Sul Ross State University",,"129","77","60"
+"225502","University of Houston-Victoria","2022","University of Houston-Victoria","Texas","Yes","940","228802","The University of Texas at Tyler",,"129","77","60"
+"225502","University of Houston-Victoria","2022","University of Houston-Victoria","Texas","Yes","940","229018","The University of Texas Permian Basin",,"129","77","60"
+"225502","University of Houston-Victoria","2022","University of Houston-Victoria","Texas","Yes","940","229027","The University of Texas at San Antonio",,"129","77","60"
+"225502","University of Houston-Victoria","2022","University of Houston-Victoria","Texas","Yes","940","483036","Texas A&M University-Central Texas",,"129","77","60"
+"225502","University of Houston-Victoria","2022","University of Houston-Victoria","Texas","Yes","940","484905","University of North Texas at Dallas",,"129","77","60"
+"225511","University of Houston","2022","University of Houston","Texas","Yes","8397","132903","University of Central Florida",,"4998","4225","85"
+"225511","University of Houston","2022","University of Houston","Texas","Yes","8397","133951","Florida International University",,"4998","4225","85"
+"225511","University of Houston","2022","University of Houston","Texas","Yes","8397","137351","University of South Florida",,"4998","4225","85"
+"225511","University of Houston","2022","University of Houston","Texas","Yes","8397","139940","Georgia State University",,"4998","4225","85"
+"225511","University of Houston","2022","University of Houston","Texas","Yes","8397","145600","University of Illinois Chicago",,"4998","4225","85"
+"225511","University of Houston","2022","University of Houston","Texas","Yes","8397","182281","University of Nevada-Las Vegas",,"4998","4225","85"
+"225511","University of Houston","2022","University of Houston","Texas","Yes","8397","227216","University of North Texas",,"4998","4225","85"
+"225511","University of Houston","2022","University of Houston","Texas","Yes","8397","228769","The University of Texas at Arlington",,"4998","4225","85"
+"225511","University of Houston","2022","University of Houston","Texas","Yes","8397","228796","The University of Texas at El Paso",,"4998","4225","85"
+"226091","Lamar University","2022","Lamar University","Texas","Yes","2506","224147","Texas A & M University-Corpus Christi",,"1339","795","59"
+"226091","Lamar University","2022","Lamar University","Texas","Yes","2506","224554","Texas A & M University-Commerce",,"1339","795","59"
+"226091","Lamar University","2022","Lamar University","Texas","Yes","2506","226152","Texas A & M International University",,"1339","795","59"
+"226091","Lamar University","2022","Lamar University","Texas","Yes","2506","227368","The University of Texas Rio Grande Valley",,"1339","795","59"
+"226091","Lamar University","2022","Lamar University","Texas","Yes","2506","227526","Prairie View A & M University",,"1339","795","59"
+"226091","Lamar University","2022","Lamar University","Texas","Yes","2506","227881","Sam Houston State University",,"1339","795","59"
+"226091","Lamar University","2022","Lamar University","Texas","Yes","2506","228431","Stephen F Austin State University",,"1339","795","59"
+"226091","Lamar University","2022","Lamar University","Texas","Yes","2506","228459","Texas State University",,"1339","795","59"
+"226091","Lamar University","2022","Lamar University","Texas","Yes","2506","228529","Tarleton State University",,"1339","795","59"
+"226091","Lamar University","2022","Lamar University","Texas","Yes","2506","228705","Texas A & M University-Kingsville",,"1339","795","59"
+"226091","Lamar University","2022","Lamar University","Texas","Yes","2506","229063","Texas Southern University",,"1339","795","59"
+"226091","Lamar University","2022","Lamar University","Texas","Yes","2506","229179","Texas Woman's University",,"1339","795","59"
+"226091","Lamar University","2022","Lamar University","Texas","Yes","2506","229814","West Texas A & M University",,"1339","795","59"
+"226134","Laredo College","2022","Laredo College","Texas","No",,,,,"0","0",
+"226152","Texas A & M International University","2022","Texas A & M International University","Texas","Yes","739","151379","Indiana University-Southeast",,"1119","885","79"
+"226152","Texas A & M International University","2022","Texas A & M International University","Texas","Yes","739","155025","Emporia State University",,"1119","885","79"
+"226152","Texas A & M International University","2022","Texas A & M International University","Texas","Yes","739","161873","University of Baltimore",,"1119","885","79"
+"226152","Texas A & M International University","2022","Texas A & M International University","Texas","Yes","739","165820","Fitchburg State University",,"1119","885","79"
+"226152","Texas A & M International University","2022","Texas A & M International University","Texas","Yes","739","210146","Southern Oregon University",,"1119","885","79"
+"226152","Texas A & M International University","2022","Texas A & M International University","Texas","Yes","739","222831","Angelo State University",,"1119","885","79"
+"226152","Texas A & M International University","2022","Texas A & M International University","Texas","Yes","739","224147","Texas A & M University-Corpus Christi",,"1119","885","79"
+"226152","Texas A & M International University","2022","Texas A & M International University","Texas","Yes","739","224554","Texas A & M University-Commerce",,"1119","885","79"
+"226152","Texas A & M International University","2022","Texas A & M International University","Texas","Yes","739","225414","University of Houston-Clear Lake",,"1119","885","79"
+"226152","Texas A & M International University","2022","Texas A & M International University","Texas","Yes","739","227526","Prairie View A & M University",,"1119","885","79"
+"226152","Texas A & M International University","2022","Texas A & M International University","Texas","Yes","739","228529","Tarleton State University",,"1119","885","79"
+"226152","Texas A & M International University","2022","Texas A & M International University","Texas","Yes","739","228705","Texas A & M University-Kingsville",,"1119","885","79"
+"226152","Texas A & M International University","2022","Texas A & M International University","Texas","Yes","739","228796","The University of Texas at El Paso",,"1119","885","79"
+"226152","Texas A & M International University","2022","Texas A & M International University","Texas","Yes","739","228802","The University of Texas at Tyler",,"1119","885","79"
+"226152","Texas A & M International University","2022","Texas A & M International University","Texas","Yes","739","229027","The University of Texas at San Antonio",,"1119","885","79"
+"226152","Texas A & M International University","2022","Texas A & M International University","Texas","Yes","739","229814","West Texas A & M University",,"1119","885","79"
+"226408","College of the Mainland","2022","College of the Mainland","Texas","No",,"222567","Alvin Community College",,"0","0",
+"226408","College of the Mainland","2022","College of the Mainland","Texas","No",,"222822","Angelina College",,"0","0",
+"226408","College of the Mainland","2022","College of the Mainland","Texas","No",,"223320","Coastal Bend College",,"0","0",
+"226408","College of the Mainland","2022","College of the Mainland","Texas","No",,"223506","Brazosport College",,"0","0",
+"226408","College of the Mainland","2022","College of the Mainland","Texas","No",,"223898","Cisco College",,"0","0",
+"226408","College of the Mainland","2022","College of the Mainland","Texas","No",,"225070","Grayson College",,"0","0",
+"226408","College of the Mainland","2022","College of the Mainland","Texas","No",,"225308","Trinity Valley Community College",,"0","0",
+"226408","College of the Mainland","2022","College of the Mainland","Texas","No",,"225371","Hill College",,"0","0",
+"226408","College of the Mainland","2022","College of the Mainland","Texas","No",,"226019","Kilgore College",,"0","0",
+"226408","College of the Mainland","2022","College of the Mainland","Texas","No",,"226204","Lee College",,"0","0",
+"226408","College of the Mainland","2022","College of the Mainland","Texas","No",,"226578","McLennan Community College",,"0","0",
+"226408","College of the Mainland","2022","College of the Mainland","Texas","No",,"226806","Midland College",,"0","0",
+"226408","College of the Mainland","2022","College of the Mainland","Texas","No",,"227304","Odessa College",,"0","0",
+"226408","College of the Mainland","2022","College of the Mainland","Texas","No",,"227377","Texas Southmost College",,"0","0",
+"226408","College of the Mainland","2022","College of the Mainland","Texas","No",,"227401","Paris Junior College",,"0","0",
+"226408","College of the Mainland","2022","College of the Mainland","Texas","No",,"228316","Southwest Texas Junior College",,"0","0",
+"226408","College of the Mainland","2022","College of the Mainland","Texas","No",,"228608","Temple College",,"0","0",
+"226408","College of the Mainland","2022","College of the Mainland","Texas","No",,"228699","Texarkana College",,"0","0",
+"226408","College of the Mainland","2022","College of the Mainland","Texas","No",,"229540","Victoria College",,"0","0",
+"226408","College of the Mainland","2022","College of the Mainland","Texas","No",,"229799","Weatherford College",,"0","0",
+"226408","College of the Mainland","2022","College of the Mainland","Texas","No",,"229841","Wharton County Junior College",,"0","0",
+"226806","Midland College","2022","Midland College","Texas","Yes","286","224110","North Central Texas College",,"0","0",
+"226806","Midland College","2022","Midland College","Texas","Yes","286","225070","Grayson College",,"0","0",
+"226806","Midland College","2022","Midland College","Texas","Yes","286","225371","Hill College",,"0","0",
+"226806","Midland College","2022","Midland College","Texas","Yes","286","225520","Howard College",,"0","0",
+"226806","Midland College","2022","Midland College","Texas","Yes","286","226019","Kilgore College",,"0","0",
+"226806","Midland College","2022","Midland College","Texas","Yes","286","226204","Lee College",,"0","0",
+"226806","Midland College","2022","Midland College","Texas","Yes","286","226578","McLennan Community College",,"0","0",
+"226806","Midland College","2022","Midland College","Texas","Yes","286","227146","Navarro College",,"0","0",
+"226806","Midland College","2022","Midland College","Texas","Yes","286","227304","Odessa College",,"0","0",
+"226806","Midland College","2022","Midland College","Texas","Yes","286","228316","Southwest Texas Junior College",,"0","0",
+"226806","Midland College","2022","Midland College","Texas","Yes","286","228608","Temple College",,"0","0",
+"226806","Midland College","2022","Midland College","Texas","Yes","286","229832","Western Texas College",,"0","0",
+"226806","Midland College","2022","Midland College","Texas","Yes","286","229841","Wharton County Junior College",,"0","0",
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","101709","University of Montevallo",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","107071","Henderson State University",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","123572","Sonoma State University",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","127185","Fort Lewis College",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","129215","Eastern Connecticut State University",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","139861","Georgia College & State University",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","148654","University of Illinois Springfield",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","161226","University of Maine at Farmington",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","163912","St. Mary's College of Maryland",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","167288","Massachusetts College of Liberal Arts",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","174251","University of Minnesota-Morris",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","178615","Truman State University",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","183062","Keene State College",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","186201","Ramapo College of New Jersey",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","196167","SUNY College at Geneseo",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","199111","University of North Carolina at Asheville",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","207722","University of Science and Arts of Oklahoma",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","210146","Southern Oregon University",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","218645","University of South Carolina Aiken",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","230603","Southern Utah University",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","230913","Northern Vermont University",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","232681","University of Mary Washington",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","233897","University of Virginia's College at Wise",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","235167","The Evergreen State College",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","237792","Shepherd University",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","240426","University of Wisconsin-Superior",,"745","471","63"
+"226833","Midwestern State University","2022","Midwestern State University","Texas","Yes","1744","262129","New College of Florida",,"745","471","63"
+"227146","Navarro College","2022","Navarro College","Texas","Yes","861","222576","Amarillo College",,"821","485","59"
+"227146","Navarro College","2022","Navarro College","Texas","Yes","861","223427","Blinn College District",,"821","485","59"
+"227146","Navarro College","2022","Navarro College","Texas","Yes","861","223816","Central Texas College",,"821","485","59"
+"227146","Navarro College","2022","Navarro College","Texas","Yes","861","224110","North Central Texas College",,"821","485","59"
+"227146","Navarro College","2022","Navarro College","Texas","Yes","861","224350","Del Mar College",,"821","485","59"
+"227146","Navarro College","2022","Navarro College","Texas","Yes","861","226134","Laredo College",,"821","485","59"
+"227146","Navarro College","2022","Navarro College","Texas","Yes","861","228158","South Plains College",,"821","485","59"
+"227146","Navarro College","2022","Navarro College","Texas","Yes","861","229355","Tyler Junior College",,"821","485","59"
+"227182","Lone Star College System","2022","Lone Star College System","Texas","No",,"105154","Mesa Community College",,"0","0",
+"227182","Lone Star College System","2022","Lone Star College System","Texas","No",,"121901","Riverside City College",,"0","0",
+"227182","Lone Star College System","2022","Lone Star College System","Texas","No",,"132709","Broward College",,"0","0",
+"227182","Lone Star College System","2022","Lone Star College System","Texas","No",,"135717","Miami Dade College",,"0","0",
+"227182","Lone Star College System","2022","Lone Star College System","Texas","No",,"138187","Valencia College",,"0","0",
+"227182","Lone Star College System","2022","Lone Star College System","Texas","No",,"182005","College of Southern Nevada",,"0","0",
+"227182","Lone Star College System","2022","Lone Star College System","Texas","No",,"202356","Cuyahoga Community College District",,"0","0",
+"227182","Lone Star College System","2022","Lone Star College System","Texas","No",,"222497","Alamo Community College District Central Office",,"0","0",
+"227182","Lone Star College System","2022","Lone Star College System","Texas","No",,"222992","Austin Community College District",,"0","0",
+"227182","Lone Star College System","2022","Lone Star College System","Texas","No",,"225423","Houston Community College",,"0","0",
+"227182","Lone Star College System","2022","Lone Star College System","Texas","No",,"228547","Tarrant County College District",,"0","0",
+"227182","Lone Star College System","2022","Lone Star College System","Texas","No",,"232946","Northern Virginia Community College",,"0","0",
+"227216","University of North Texas","2022","University of North Texas","Texas","Yes","6419","104151","Arizona State University Campus Immersion",,"5363","4303","80"
+"227216","University of North Texas","2022","University of North Texas","Texas","Yes","6419","110705","University of California-Santa Barbara",,"5363","4303","80"
+"227216","University of North Texas","2022","University of North Texas","Texas","Yes","6419","132903","University of Central Florida",,"5363","4303","80"
+"227216","University of North Texas","2022","University of North Texas","Texas","Yes","6419","133951","Florida International University",,"5363","4303","80"
+"227216","University of North Texas","2022","University of North Texas","Texas","Yes","6419","134097","Florida State University",,"5363","4303","80"
+"227216","University of North Texas","2022","University of North Texas","Texas","Yes","6419","139940","Georgia State University",,"5363","4303","80"
+"227216","University of North Texas","2022","University of North Texas","Texas","Yes","6419","151351","Indiana University-Bloomington",,"5363","4303","80"
+"227216","University of North Texas","2022","University of North Texas","Texas","Yes","6419","196060","SUNY at Albany",,"5363","4303","80"
+"227216","University of North Texas","2022","University of North Texas","Texas","Yes","6419","201885","University of Cincinnati-Main Campus",,"5363","4303","80"
+"227216","University of North Texas","2022","University of North Texas","Texas","Yes","6419","207500","University of Oklahoma-Norman Campus",,"5363","4303","80"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","107619","Phillips Community College of the University of Arkansas",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","137759","Tallahassee Community College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","138187","Valencia College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","165112","Bunker Hill Community College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","167631","Roxbury Community College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","203331","Eastern Gateway Community College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","216825","Westmoreland County Community College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","222822","Angelina College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","223320","Coastal Bend College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","223506","Brazosport College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","223898","Cisco College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","224350","Del Mar College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","224961","Galveston College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","226408","College of the Mainland",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","226578","McLennan Community College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","226806","Midland College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","227401","Paris Junior College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","228158","South Plains College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","228316","Southwest Texas Junior College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","228608","Temple College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","228699","Texarkana College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","229504","Vernon College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","229540","Victoria College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","229799","Weatherford College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","229841","Wharton County Junior College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","230861","Community College of Vermont",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","231882","Danville Community College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","236753","Tacoma Community College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","237109","Yakima Valley College",,"660","423","64"
+"227304","Odessa College","2022","Odessa College","Texas","Yes","238","238014","West Virginia Northern Community College",,"660","423","64"
+"227368","The University of Texas Rio Grande Valley","2022","The University of Texas Rio Grande Valley","Texas","Yes","1106","133669","Florida Atlantic University",,"4240","3229","76"
+"227368","The University of Texas Rio Grande Valley","2022","The University of Texas Rio Grande Valley","Texas","Yes","1106","178402","University of Missouri-Kansas City",,"4240","3229","76"
+"227368","The University of Texas Rio Grande Valley","2022","The University of Texas Rio Grande Valley","Texas","Yes","1106","182281","University of Nevada-Las Vegas",,"4240","3229","76"
+"227368","The University of Texas Rio Grande Valley","2022","The University of Texas Rio Grande Valley","Texas","Yes","1106","188030","New Mexico State University-Main Campus",,"4240","3229","76"
+"227368","The University of Texas Rio Grande Valley","2022","The University of Texas Rio Grande Valley","Texas","Yes","1106","198464","East Carolina University",,"4240","3229","76"
+"227368","The University of Texas Rio Grande Valley","2022","The University of Texas Rio Grande Valley","Texas","Yes","1106","220862","University of Memphis",,"4240","3229","76"
+"227368","The University of Texas Rio Grande Valley","2022","The University of Texas Rio Grande Valley","Texas","Yes","1106","228796","The University of Texas at El Paso",,"4240","3229","76"
+"227368","The University of Texas Rio Grande Valley","2022","The University of Texas Rio Grande Valley","Texas","Yes","1106","229027","The University of Texas at San Antonio",,"4240","3229","76"
+"227526","Prairie View A & M University","2022","Prairie View A & M University","Texas","Yes","4808","199157","North Carolina Central University",,"1638","1200","73"
+"227526","Prairie View A & M University","2022","Prairie View A & M University","Texas","Yes","4808","224147","Texas A & M University-Corpus Christi",,"1638","1200","73"
+"227526","Prairie View A & M University","2022","Prairie View A & M University","Texas","Yes","4808","224554","Texas A & M University-Commerce",,"1638","1200","73"
+"227526","Prairie View A & M University","2022","Prairie View A & M University","Texas","Yes","4808","226152","Texas A & M International University",,"1638","1200","73"
+"227526","Prairie View A & M University","2022","Prairie View A & M University","Texas","Yes","4808","227368","The University of Texas Rio Grande Valley",,"1638","1200","73"
+"227526","Prairie View A & M University","2022","Prairie View A & M University","Texas","Yes","4808","227881","Sam Houston State University",,"1638","1200","73"
+"227526","Prairie View A & M University","2022","Prairie View A & M University","Texas","Yes","4808","228459","Texas State University",,"1638","1200","73"
+"227526","Prairie View A & M University","2022","Prairie View A & M University","Texas","Yes","4808","228529","Tarleton State University",,"1638","1200","73"
+"227526","Prairie View A & M University","2022","Prairie View A & M University","Texas","Yes","4808","228705","Texas A & M University-Kingsville",,"1638","1200","73"
+"227526","Prairie View A & M University","2022","Prairie View A & M University","Texas","Yes","4808","228769","The University of Texas at Arlington",,"1638","1200","73"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"104708","Glendale Community College",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"105145","GateWay Community College",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"105154","Mesa Community College",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"105428","Phoenix College",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"105668","Rio Salado College",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"105747","Scottsdale Community College",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"105792","South Mountain Community College",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"132709","Broward College",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"135717","Miami Dade College",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"138187","Valencia College",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"202356","Cuyahoga Community College District",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"222992","Austin Community College District",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"224615","Dallas College",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"224642","El Paso Community College",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"225423","Houston Community College",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"227182","Lone Star College System",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"227924","San Antonio College",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"227979","San Jacinto Community College",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"228547","Tarrant County College District",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"232946","Northern Virginia Community College",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"233772","Tidewater Community College",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"246354","Palo Alto College",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"246895","GateWay Community College-Central City",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"247834","Collin County Community College District",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"364016","Paradise Valley Community College",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"364025","Chandler-Gilbert Community College",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"384333","Estrella Mountain Community College",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"409315","South Texas College",,"385","159","41"
+"227854","St Philip's College","2022","St Philip's College","Texas","No",,"420398","Northwest Vista College",,"385","159","41"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","102553","University of Alaska Anchorage",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","106397","University of Arkansas",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","106704","University of Central Arkansas",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","139931","Georgia Southern University",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","142285","University of Idaho",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","145813","Illinois State University",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","149772","Western Illinois University",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","151801","Indiana Wesleyan University-Marion",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","155399","Kansas State University",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","156125","Wichita State University",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","156620","Eastern Kentucky University",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","160612","Southeastern Louisiana University",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","176017","University of Mississippi",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","176080","Mississippi State University",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","178420","University of Missouri-St Louis",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","180489","The University of Montana",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","197869","Appalachian State University",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","200800","University of Akron Main Campus",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","201441","Bowling Green State University-Main Campus",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","206604","Wright State University-Main Campus",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","213020","Indiana University of Pennsylvania-Main Campus",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","217484","University of Rhode Island",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","219356","South Dakota State University",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","219471","University of South Dakota",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","225414","University of Houston-Clear Lake",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","229027","The University of Texas at San Antonio",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","229179","Texas Woman's University",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","235097","Eastern Washington University",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","237525","Marshall University",,"2758","2038","74"
+"227881","Sam Houston State University","2022","Sam Houston State University","Texas","Yes","4097","240727","University of Wyoming",,"2758","2038","74"
+"227924","San Antonio College","2022","San Antonio College","Texas","No",,"222992","Austin Community College District",,"1178","538","46"
+"227924","San Antonio College","2022","San Antonio College","Texas","No",,"224615","Dallas College",,"1178","538","46"
+"227924","San Antonio College","2022","San Antonio College","Texas","No",,"224642","El Paso Community College",,"1178","538","46"
+"227924","San Antonio College","2022","San Antonio College","Texas","No",,"225423","Houston Community College",,"1178","538","46"
+"227924","San Antonio College","2022","San Antonio College","Texas","No",,"227182","Lone Star College System",,"1178","538","46"
+"227924","San Antonio College","2022","San Antonio College","Texas","No",,"227854","St Philip's College",,"1178","538","46"
+"227924","San Antonio College","2022","San Antonio College","Texas","No",,"227979","San Jacinto Community College",,"1178","538","46"
+"227924","San Antonio College","2022","San Antonio College","Texas","No",,"228547","Tarrant County College District",,"1178","538","46"
+"227924","San Antonio College","2022","San Antonio College","Texas","No",,"246354","Palo Alto College",,"1178","538","46"
+"227924","San Antonio College","2022","San Antonio College","Texas","No",,"247834","Collin County Community College District",,"1178","538","46"
+"227924","San Antonio College","2022","San Antonio College","Texas","No",,"409315","South Texas College",,"1178","538","46"
+"227924","San Antonio College","2022","San Antonio College","Texas","No",,"420398","Northwest Vista College",,"1178","538","46"
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"109208","American River College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"109208","American River College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"109208","American River College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"113634","Diablo Valley College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"113634","Diablo Valley College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"113634","Diablo Valley College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"113856","East Los Angeles College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"113856","East Los Angeles College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"113856","East Los Angeles College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"113980","El Camino Community College District","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"113980","El Camino Community College District","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"113980","El Camino Community College District","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"114789","Fresno City College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"114789","Fresno City College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"114789","Fresno City College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"117645","Long Beach City College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"117645","Long Beach City College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"117645","Long Beach City College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"117706","Los Angeles Pierce College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"117706","Los Angeles Pierce College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"117706","Los Angeles Pierce College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"117788","Los Angeles City College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"117788","Los Angeles City College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"117788","Los Angeles City College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"119164","Mt San Antonio College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"119164","Mt San Antonio College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"119164","Mt San Antonio College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"120342","Orange Coast College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"120342","Orange Coast College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"120342","Orange Coast College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"120971","Palomar College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"120971","Palomar College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"120971","Palomar College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"121044","Pasadena City College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"121044","Pasadena City College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"121044","Pasadena City College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"121619","Santa Ana College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"121619","Santa Ana College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"121619","Santa Ana College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"121901","Riverside City College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"121901","Riverside City College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"121901","Riverside City College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"122375","San Diego Mesa College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"122375","San Diego Mesa College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"122375","San Diego Mesa College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"132709","Broward College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"132709","Broward College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"132709","Broward College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"134495","Hillsborough Community College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"134495","Hillsborough Community College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"134495","Hillsborough Community College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"134608","Indian River State College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"134608","Indian River State College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"134608","Indian River State College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"135717","Miami Dade College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"135717","Miami Dade College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"135717","Miami Dade College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"137078","St Petersburg College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"137078","St Petersburg College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"137078","St Petersburg College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"138187","Valencia College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"138187","Valencia College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"138187","Valencia College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"182005","College of Southern Nevada","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"182005","College of Southern Nevada","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"182005","College of Southern Nevada","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"187532","Central New Mexico Community College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"187532","Central New Mexico Community College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"187532","Central New Mexico Community College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"190521","CUNY Borough of Manhattan Community College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"190521","CUNY Borough of Manhattan Community College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"190521","CUNY Borough of Manhattan Community College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"222497","Alamo Community College District Central Office","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"222497","Alamo Community College District Central Office","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"222497","Alamo Community College District Central Office","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"222992","Austin Community College District","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"222992","Austin Community College District","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"222992","Austin Community College District","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"224615","Dallas College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"224615","Dallas College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"224615","Dallas College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"224642","El Paso Community College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"224642","El Paso Community College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"224642","El Paso Community College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"225423","Houston Community College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"225423","Houston Community College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"225423","Houston Community College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"227182","Lone Star College System","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"227182","Lone Star College System","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"227182","Lone Star College System","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"227924","San Antonio College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"227924","San Antonio College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"227924","San Antonio College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"228547","Tarrant County College District","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"228547","Tarrant County College District","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"228547","Tarrant County College District","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"244437","Georgia State University-Perimeter College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"244437","Georgia State University-Perimeter College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"244437","Georgia State University-Perimeter College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"247834","Collin County Community College District","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"247834","Collin County Community College District","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"247834","Collin County Community College District","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"409315","South Texas College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"409315","South Texas College","Public, 2-year","0","0",
+"227979","San Jacinto Community College","2022","San Jacinto Community College","Texas","No",,"409315","South Texas College","Public, 2-year","0","0",
+"228431","Stephen F Austin State University","2022","Stephen F Austin State University","Texas","Yes","4441",,,,"1684","1232","73"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","100706","University of Alabama in Huntsville",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","100751","The University of Alabama",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","100858","Auburn University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","102094","University of South Alabama",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","102614","University of Alaska Fairbanks",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","105330","Northern Arizona University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","119678","Naval Postgraduate School",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","122409","San Diego State University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","126562","University of Colorado Denver/Anschutz Medical Campus",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","126775","Colorado School of Mines",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","127741","University of Northern Colorado",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","133650","Florida Agricultural and Mechanical University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","133669","Florida Atlantic University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","142285","University of Idaho",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","145813","Illinois State University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","147703","Northern Illinois University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","149222","Southern Illinois University-Carbondale",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","150136","Ball State University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","151111","Indiana University-Purdue University-Indianapolis",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","156125","Wichita State University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","159939","University of New Orleans",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","160658","University of Louisiana at Lafayette",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","161253","University of Maine",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","163268","University of Maryland-Baltimore County",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","166513","University of Massachusetts-Lowell",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","166638","University of Massachusetts-Boston",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","167987","University of Massachusetts-Dartmouth",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","169248","Central Michigan University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","171128","Michigan Technological University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","172699","Western Michigan University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","175856","Jackson State University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","176080","Mississippi State University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","176372","University of Southern Mississippi",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","178402","University of Missouri-Kansas City",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","178411","Missouri University of Science and Technology",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","178420","University of Missouri-St Louis",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","180461","Montana State University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","180489","The University of Montana",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","182281","University of Nevada-Las Vegas",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","182290","University of Nevada-Reno",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","183044","University of New Hampshire-Main Campus",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","185828","New Jersey Institute of Technology",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","186399","Rutgers University-Newark",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","188030","New Mexico State University-Main Campus",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","196079","Binghamton University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","198464","East Carolina University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","199102","North Carolina A & T State University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","199139","University of North Carolina at Charlotte",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","199148","University of North Carolina at Greensboro",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","200280","University of North Dakota",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","200332","North Dakota State University-Main Campus",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","200800","University of Akron Main Campus",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","201441","Bowling Green State University-Main Campus",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","202134","Cleveland State University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","203517","Kent State University at Kent",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","204024","Miami University-Oxford",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","204857","Ohio University-Main Campus",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","206084","University of Toledo",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","207388","Oklahoma State University-Main Campus",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","209807","Portland State University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","217484","University of Rhode Island",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","219356","South Dakota State University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","219471","University of South Dakota",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","220862","University of Memphis",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","224147","Texas A & M University-Corpus Christi",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","224554","Texas A & M University-Commerce",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","225511","University of Houston",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","226091","Lamar University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","227216","University of North Texas",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","227368","The University of Texas Rio Grande Valley",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","227526","Prairie View A & M University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","227881","Sam Houston State University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","228705","Texas A & M University-Kingsville",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","228723","Texas A & M University-College Station",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","228769","The University of Texas at Arlington",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","228778","The University of Texas at Austin",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","228787","The University of Texas at Dallas",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","228796","The University of Texas at El Paso",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","229027","The University of Texas at San Antonio",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","229063","Texas Southern University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","229115","Texas Tech University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","229179","Texas Woman's University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","230728","Utah State University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","231174","University of Vermont",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","231624","William & Mary",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","232982","Old Dominion University",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","240727","University of Wyoming",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","243221","University of Puerto Rico-Rio Piedras",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","445188","University of California-Merced",,"6193","4959","80"
+"228459","Texas State University","2022","Texas State University","Texas","Yes","6853","482149","Augusta University",,"6193","4959","80"
+"228501","Sul Ross State University","2022","Sul Ross State University","Texas","Yes","758","100830","Auburn University at Montgomery",,"192","94","49"
+"228501","Sul Ross State University","2022","Sul Ross State University","Texas","Yes","758","101587","University of West Alabama",,"192","94","49"
+"228501","Sul Ross State University","2022","Sul Ross State University","Texas","Yes","758","102377","Tuskegee University",,"192","94","49"
+"228501","Sul Ross State University","2022","Sul Ross State University","Texas","Yes","758","139719","Fort Valley State University",,"192","94","49"
+"228501","Sul Ross State University","2022","Sul Ross State University","Texas","Yes","758","139764","Georgia Southwestern State University",,"192","94","49"
+"228501","Sul Ross State University","2022","Sul Ross State University","Texas","Yes","758","159009","Grambling State University",,"192","94","49"
+"228501","Sul Ross State University","2022","Sul Ross State University","Texas","Yes","758","175616","Delta State University",,"192","94","49"
+"228501","Sul Ross State University","2022","Sul Ross State University","Texas","Yes","758","218733","South Carolina State University",,"192","94","49"
+"228501","Sul Ross State University","2022","Sul Ross State University","Texas","Yes","758","225502","University of Houston-Victoria",,"192","94","49"
+"228501","Sul Ross State University","2022","Sul Ross State University","Texas","Yes","758","232681","University of Mary Washington",,"192","94","49"
+"228529","Tarleton State University","2022","Tarleton State University","Texas","Yes","4103","224147","Texas A & M University-Corpus Christi",,"2001","1410","70"
+"228529","Tarleton State University","2022","Tarleton State University","Texas","Yes","4103","224545","Texas A&M University-Texarkana",,"2001","1410","70"
+"228529","Tarleton State University","2022","Tarleton State University","Texas","Yes","4103","224554","Texas A & M University-Commerce",,"2001","1410","70"
+"228529","Tarleton State University","2022","Tarleton State University","Texas","Yes","4103","226091","Lamar University",,"2001","1410","70"
+"228529","Tarleton State University","2022","Tarleton State University","Texas","Yes","4103","226152","Texas A & M International University",,"2001","1410","70"
+"228529","Tarleton State University","2022","Tarleton State University","Texas","Yes","4103","227368","The University of Texas Rio Grande Valley",,"2001","1410","70"
+"228529","Tarleton State University","2022","Tarleton State University","Texas","Yes","4103","227526","Prairie View A & M University",,"2001","1410","70"
+"228529","Tarleton State University","2022","Tarleton State University","Texas","Yes","4103","228431","Stephen F Austin State University",,"2001","1410","70"
+"228529","Tarleton State University","2022","Tarleton State University","Texas","Yes","4103","228705","Texas A & M University-Kingsville",,"2001","1410","70"
+"228529","Tarleton State University","2022","Tarleton State University","Texas","Yes","4103","229814","West Texas A & M University",,"2001","1410","70"
+"228635","University of Texas Southwestern Medical Center","2022","University of Texas Southwestern Medical Center","Texas","Yes","402",,,,,,
+"228644","The University of Texas Health Science Center at San Antonio","2022","The University of Texas Health Science Center at San Antonio","Texas","No",,"159373","Louisiana State University Health Sciences Center-New Orleans",,,,
+"228644","The University of Texas Health Science Center at San Antonio","2022","The University of Texas Health Science Center at San Antonio","Texas","No",,"207342","University of Oklahoma-Health Sciences Center",,,,
+"228644","The University of Texas Health Science Center at San Antonio","2022","The University of Texas Health Science Center at San Antonio","Texas","No",,"209490","Oregon Health & Science University",,,,
+"228644","The University of Texas Health Science Center at San Antonio","2022","The University of Texas Health Science Center at San Antonio","Texas","No",,"228653","The University of Texas Medical Branch at Galveston",,,,
+"228644","The University of Texas Health Science Center at San Antonio","2022","The University of Texas Health Science Center at San Antonio","Texas","No",,"228909","University of North Texas Health Science Center",,,,
+"228644","The University of Texas Health Science Center at San Antonio","2022","The University of Texas Health Science Center at San Antonio","Texas","No",,"229300","The University of Texas Health Science Center at Houston",,,,
+"228644","The University of Texas Health Science Center at San Antonio","2022","The University of Texas Health Science Center at San Antonio","Texas","No",,"229337","Texas Tech University Health Sciences Center",,,,
+"228653","The University of Texas Medical Branch at Galveston","2022","The University of Texas Medical Branch at Galveston","Texas","No",,"110699","University of California-San Francisco",,,,
+"228653","The University of Texas Medical Branch at Galveston","2022","The University of Texas Medical Branch at Galveston","Texas","No",,"159373","Louisiana State University Health Sciences Center-New Orleans",,,,
+"228653","The University of Texas Medical Branch at Galveston","2022","The University of Texas Medical Branch at Galveston","Texas","No",,"207342","University of Oklahoma-Health Sciences Center",,,,
+"228653","The University of Texas Medical Branch at Galveston","2022","The University of Texas Medical Branch at Galveston","Texas","No",,"209490","Oregon Health & Science University",,,,
+"228653","The University of Texas Medical Branch at Galveston","2022","The University of Texas Medical Branch at Galveston","Texas","No",,"218335","Medical University of South Carolina",,,,
+"228653","The University of Texas Medical Branch at Galveston","2022","The University of Texas Medical Branch at Galveston","Texas","No",,"228635","University of Texas Southwestern Medical Center",,,,
+"228653","The University of Texas Medical Branch at Galveston","2022","The University of Texas Medical Branch at Galveston","Texas","No",,"228644","The University of Texas Health Science Center at San Antonio",,,,
+"228653","The University of Texas Medical Branch at Galveston","2022","The University of Texas Medical Branch at Galveston","Texas","No",,"229300","The University of Texas Health Science Center at Houston",,,,
+"228653","The University of Texas Medical Branch at Galveston","2022","The University of Texas Medical Branch at Galveston","Texas","No",,"229337","Texas Tech University Health Sciences Center",,,,
+"228705","Texas A & M University-Kingsville","2022","Texas A & M University-Kingsville","Texas","Yes","1508","100654","Alabama A & M University",,"896","569","64"
+"228705","Texas A & M University-Kingsville","2022","Texas A & M University-Kingsville","Texas","Yes","1508","100706","University of Alabama in Huntsville",,"896","569","64"
+"228705","Texas A & M University-Kingsville","2022","Texas A & M University-Kingsville","Texas","Yes","1508","106467","Arkansas Tech University",,"896","569","64"
+"228705","Texas A & M University-Kingsville","2022","Texas A & M University-Kingsville","Texas","Yes","1508","162007","Bowie State University",,"896","569","64"
+"228705","Texas A & M University-Kingsville","2022","Texas A & M University-Kingsville","Texas","Yes","1508","199148","University of North Carolina at Greensboro",,"896","569","64"
+"228705","Texas A & M University-Kingsville","2022","Texas A & M University-Kingsville","Texas","Yes","1508","220075","East Tennessee State University",,"896","569","64"
+"228705","Texas A & M University-Kingsville","2022","Texas A & M University-Kingsville","Texas","Yes","1508","224147","Texas A & M University-Corpus Christi",,"896","569","64"
+"228705","Texas A & M University-Kingsville","2022","Texas A & M University-Kingsville","Texas","Yes","1508","224554","Texas A & M University-Commerce",,"896","569","64"
+"228705","Texas A & M University-Kingsville","2022","Texas A & M University-Kingsville","Texas","Yes","1508","227368","The University of Texas Rio Grande Valley",,"896","569","64"
+"228705","Texas A & M University-Kingsville","2022","Texas A & M University-Kingsville","Texas","Yes","1508","227881","Sam Houston State University",,"896","569","64"
+"228705","Texas A & M University-Kingsville","2022","Texas A & M University-Kingsville","Texas","Yes","1508","229063","Texas Southern University",,"896","569","64"
+"228705","Texas A & M University-Kingsville","2022","Texas A & M University-Kingsville","Texas","Yes","1508","229179","Texas Woman's University",,"896","569","64"
+"228723","Texas A & M University-College Station","2022","Texas A & M University-College Station","Texas","Yes","11306","110635","University of California-Berkeley","Public, 4-year or above","11153","10545","95"
+"228723","Texas A & M University-College Station","2022","Texas A & M University-College Station","Texas","Yes","11306","110644","University of California-Davis","Public, 4-year or above","11153","10545","95"
+"228723","Texas A & M University-College Station","2022","Texas A & M University-College Station","Texas","Yes","11306","110662","University of California-Los Angeles","Public, 4-year or above","11153","10545","95"
+"228723","Texas A & M University-College Station","2022","Texas A & M University-College Station","Texas","Yes","11306","110680","University of California-San Diego","Public, 4-year or above","11153","10545","95"
+"228723","Texas A & M University-College Station","2022","Texas A & M University-College Station","Texas","Yes","11306","134130","University of Florida","Public, 4-year or above","11153","10545","95"
+"228723","Texas A & M University-College Station","2022","Texas A & M University-College Station","Texas","Yes","11306","139755","Georgia Institute of Technology-Main Campus","Public, 4-year or above","11153","10545","95"
+"228723","Texas A & M University-College Station","2022","Texas A & M University-College Station","Texas","Yes","11306","145637","University of Illinois Urbana-Champaign","Public, 4-year or above","11153","10545","95"
+"228723","Texas A & M University-College Station","2022","Texas A & M University-College Station","Texas","Yes","11306","151351","Indiana University-Bloomington","Public, 4-year or above","11153","10545","95"
+"228723","Texas A & M University-College Station","2022","Texas A & M University-College Station","Texas","Yes","11306","163286","University of Maryland-College Park","Public, 4-year or above","11153","10545","95"
+"228723","Texas A & M University-College Station","2022","Texas A & M University-College Station","Texas","Yes","11306","170976","University of Michigan-Ann Arbor","Public, 4-year or above","11153","10545","95"
+"228723","Texas A & M University-College Station","2022","Texas A & M University-College Station","Texas","Yes","11306","171100","Michigan State University","Public, 4-year or above","11153","10545","95"
+"228723","Texas A & M University-College Station","2022","Texas A & M University-College Station","Texas","Yes","11306","174066","University of Minnesota-Twin Cities","Public, 4-year or above","11153","10545","95"
+"228723","Texas A & M University-College Station","2022","Texas A & M University-College Station","Texas","Yes","11306","199120","University of North Carolina at Chapel Hill","Public, 4-year or above","11153","10545","95"
+"228723","Texas A & M University-College Station","2022","Texas A & M University-College Station","Texas","Yes","11306","204796","Ohio State University-Main Campus","Public, 4-year or above","11153","10545","95"
+"228723","Texas A & M University-College Station","2022","Texas A & M University-College Station","Texas","Yes","11306","214777","Pennsylvania State University-Main Campus","Public, 4-year or above","11153","10545","95"
+"228723","Texas A & M University-College Station","2022","Texas A & M University-College Station","Texas","Yes","11306","228778","The University of Texas at Austin","Public, 4-year or above","11153","10545","95"
+"228723","Texas A & M University-College Station","2022","Texas A & M University-College Station","Texas","Yes","11306","236948","University of Washington-Seattle Campus","Public, 4-year or above","11153","10545","95"
+"228723","Texas A & M University-College Station","2022","Texas A & M University-College Station","Texas","Yes","11306","240444","University of Wisconsin-Madison","Public, 4-year or above","11153","10545","95"
+"228723","Texas A & M University-College Station","2022","Texas A & M University-College Station","Texas","Yes","11306","243780","Purdue University-Main Campus","Public, 4-year or above","11153","10545","95"
+"228769","The University of Texas at Arlington","2022","The University of Texas at Arlington","Texas","Yes","9543","104151","Arizona State University Campus Immersion",,"4010","2972","74"
+"228769","The University of Texas at Arlington","2022","The University of Texas at Arlington","Texas","Yes","9543","110653","University of California-Irvine",,"4010","2972","74"
+"228769","The University of Texas at Arlington","2022","The University of Texas at Arlington","Texas","Yes","9543","110671","University of California-Riverside",,"4010","2972","74"
+"228769","The University of Texas at Arlington","2022","The University of Texas at Arlington","Texas","Yes","9543","129020","University of Connecticut",,"4010","2972","74"
+"228769","The University of Texas at Arlington","2022","The University of Texas at Arlington","Texas","Yes","9543","132903","University of Central Florida",,"4010","2972","74"
+"228769","The University of Texas at Arlington","2022","The University of Texas at Arlington","Texas","Yes","9543","133951","Florida International University",,"4010","2972","74"
+"228769","The University of Texas at Arlington","2022","The University of Texas at Arlington","Texas","Yes","9543","137351","University of South Florida",,"4010","2972","74"
+"228769","The University of Texas at Arlington","2022","The University of Texas at Arlington","Texas","Yes","9543","139940","Georgia State University",,"4010","2972","74"
+"228769","The University of Texas at Arlington","2022","The University of Texas at Arlington","Texas","Yes","9543","145600","University of Illinois Chicago",,"4010","2972","74"
+"228769","The University of Texas at Arlington","2022","The University of Texas at Arlington","Texas","Yes","9543","181464","University of Nebraska-Lincoln",,"4010","2972","74"
+"228769","The University of Texas at Arlington","2022","The University of Texas at Arlington","Texas","Yes","9543","186380","Rutgers University-New Brunswick",,"4010","2972","74"
+"228769","The University of Texas at Arlington","2022","The University of Texas at Arlington","Texas","Yes","9543","201885","University of Cincinnati-Main Campus",,"4010","2972","74"
+"228769","The University of Texas at Arlington","2022","The University of Texas at Arlington","Texas","Yes","9543","209542","Oregon State University",,"4010","2972","74"
+"228778","The University of Texas at Austin","2022","The University of Texas at Austin","Texas","Yes","7953","110635","University of California-Berkeley",,"8915","8496","95"
+"228778","The University of Texas at Austin","2022","The University of Texas at Austin","Texas","Yes","7953","110662","University of California-Los Angeles",,"8915","8496","95"
+"228778","The University of Texas at Austin","2022","The University of Texas at Austin","Texas","Yes","7953","110680","University of California-San Diego",,"8915","8496","95"
+"228778","The University of Texas at Austin","2022","The University of Texas at Austin","Texas","Yes","7953","145637","University of Illinois Urbana-Champaign",,"8915","8496","95"
+"228778","The University of Texas at Austin","2022","The University of Texas at Austin","Texas","Yes","7953","151351","Indiana University-Bloomington",,"8915","8496","95"
+"228778","The University of Texas at Austin","2022","The University of Texas at Austin","Texas","Yes","7953","170976","University of Michigan-Ann Arbor",,"8915","8496","95"
+"228778","The University of Texas at Austin","2022","The University of Texas at Austin","Texas","Yes","7953","171100","Michigan State University",,"8915","8496","95"
+"228778","The University of Texas at Austin","2022","The University of Texas at Austin","Texas","Yes","7953","174066","University of Minnesota-Twin Cities",,"8915","8496","95"
+"228778","The University of Texas at Austin","2022","The University of Texas at Austin","Texas","Yes","7953","199120","University of North Carolina at Chapel Hill",,"8915","8496","95"
+"228778","The University of Texas at Austin","2022","The University of Texas at Austin","Texas","Yes","7953","204796","Ohio State University-Main Campus",,"8915","8496","95"
+"228778","The University of Texas at Austin","2022","The University of Texas at Austin","Texas","Yes","7953","214777","Pennsylvania State University-Main Campus",,"8915","8496","95"
+"228778","The University of Texas at Austin","2022","The University of Texas at Austin","Texas","Yes","7953","236948","University of Washington-Seattle Campus",,"8915","8496","95"
+"228778","The University of Texas at Austin","2022","The University of Texas at Austin","Texas","Yes","7953","240444","University of Wisconsin-Madison",,"8915","8496","95"
+"228778","The University of Texas at Austin","2022","The University of Texas at Austin","Texas","Yes","7953","243780","Purdue University-Main Campus",,"8915","8496","95"
+"228787","The University of Texas at Dallas","2022","The University of Texas at Dallas","Texas","Yes","5543","110635","University of California-Berkeley",,"3840","3351","87"
+"228787","The University of Texas at Dallas","2022","The University of Texas at Dallas","Texas","Yes","5543","110705","University of California-Santa Barbara",,"3840","3351","87"
+"228787","The University of Texas at Dallas","2022","The University of Texas at Dallas","Texas","Yes","5543","126614","University of Colorado Boulder",,"3840","3351","87"
+"228787","The University of Texas at Dallas","2022","The University of Texas at Dallas","Texas","Yes","5543","139755","Georgia Institute of Technology-Main Campus",,"3840","3351","87"
+"228787","The University of Texas at Dallas","2022","The University of Texas at Dallas","Texas","Yes","5543","153603","Iowa State University",,"3840","3351","87"
+"228787","The University of Texas at Dallas","2022","The University of Texas at Dallas","Texas","Yes","5543","163286","University of Maryland-College Park",,"3840","3351","87"
+"228787","The University of Texas at Dallas","2022","The University of Texas at Dallas","Texas","Yes","5543","243780","Purdue University-Main Campus",,"3840","3351","87"
+"228796","The University of Texas at El Paso","2022","The University of Texas at El Paso","Texas","Yes","988","133669","Florida Atlantic University",,"2717","2046","75"
+"228796","The University of Texas at El Paso","2022","The University of Texas at El Paso","Texas","Yes","988","133951","Florida International University",,"2717","2046","75"
+"228796","The University of Texas at El Paso","2022","The University of Texas at El Paso","Texas","Yes","988","139940","Georgia State University",,"2717","2046","75"
+"228796","The University of Texas at El Paso","2022","The University of Texas at El Paso","Texas","Yes","988","176372","University of Southern Mississippi",,"2717","2046","75"
+"228796","The University of Texas at El Paso","2022","The University of Texas at El Paso","Texas","Yes","988","182281","University of Nevada-Las Vegas",,"2717","2046","75"
+"228796","The University of Texas at El Paso","2022","The University of Texas at El Paso","Texas","Yes","988","200800","University of Akron Main Campus",,"2717","2046","75"
+"228796","The University of Texas at El Paso","2022","The University of Texas at El Paso","Texas","Yes","988","206604","Wright State University-Main Campus",,"2717","2046","75"
+"228796","The University of Texas at El Paso","2022","The University of Texas at El Paso","Texas","Yes","988","220862","University of Memphis",,"2717","2046","75"
+"228796","The University of Texas at El Paso","2022","The University of Texas at El Paso","Texas","Yes","988","228769","The University of Texas at Arlington",,"2717","2046","75"
+"228796","The University of Texas at El Paso","2022","The University of Texas at El Paso","Texas","Yes","988","229027","The University of Texas at San Antonio",,"2717","2046","75"
+"228802","The University of Texas at Tyler","2022","The University of Texas at Tyler","Texas","Yes","1724","110583","California State University-Long Beach",,"1113","676","61"
+"228802","The University of Texas at Tyler","2022","The University of Texas at Tyler","Texas","Yes","1724","163851","Salisbury University",,"1113","676","61"
+"228802","The University of Texas at Tyler","2022","The University of Texas at Tyler","Texas","Yes","1724","164076","Towson University",,"1113","676","61"
+"228802","The University of Texas at Tyler","2022","The University of Texas at Tyler","Texas","Yes","1724","170082","Grand Valley State University",,"1113","676","61"
+"228802","The University of Texas at Tyler","2022","The University of Texas at Tyler","Texas","Yes","1724","196121","SUNY Brockport",,"1113","676","61"
+"228802","The University of Texas at Tyler","2022","The University of Texas at Tyler","Texas","Yes","1724","196176","State University of New York at New Paltz",,"1113","676","61"
+"228802","The University of Texas at Tyler","2022","The University of Texas at Tyler","Texas","Yes","1724","196194","State University of New York at Oswego",,"1113","676","61"
+"228802","The University of Texas at Tyler","2022","The University of Texas at Tyler","Texas","Yes","1724","216764","West Chester University of Pennsylvania",,"1113","676","61"
+"228802","The University of Texas at Tyler","2022","The University of Texas at Tyler","Texas","Yes","1724","232681","University of Mary Washington",,"1113","676","61"
+"228802","The University of Texas at Tyler","2022","The University of Texas at Tyler","Texas","Yes","1724","233277","Radford University",,"1113","676","61"
+"228909","University of North Texas Health Science Center","2022","University of North Texas Health Science Center","Texas","No",,,,,,,
+"229018","The University of Texas Permian Basin","2022","The University of Texas Permian Basin","Texas","Yes","1181","100830","Auburn University at Montgomery",,"453","300","66"
+"229018","The University of Texas Permian Basin","2022","The University of Texas Permian Basin","Texas","Yes","1181","106467","Arkansas Tech University",,"453","300","66"
+"229018","The University of Texas Permian Basin","2022","The University of Texas Permian Basin","Texas","Yes","1181","110486","California State University-Bakersfield",,"453","300","66"
+"229018","The University of Texas Permian Basin","2022","The University of Texas Permian Basin","Texas","Yes","1181","110495","California State University-Stanislaus",,"453","300","66"
+"229018","The University of Texas Permian Basin","2022","The University of Texas Permian Basin","Texas","Yes","1181","126182","Adams State University",,"453","300","66"
+"229018","The University of Texas Permian Basin","2022","The University of Texas Permian Basin","Texas","Yes","1181","126580","University of Colorado Colorado Springs",,"453","300","66"
+"229018","The University of Texas Permian Basin","2022","The University of Texas Permian Basin","Texas","Yes","1181","139366","Columbus State University",,"453","300","66"
+"229018","The University of Texas Permian Basin","2022","The University of Texas Permian Basin","Texas","Yes","1181","159416","Louisiana State University-Shreveport",,"453","300","66"
+"229018","The University of Texas Permian Basin","2022","The University of Texas Permian Basin","Texas","Yes","1181","160038","Northwestern State University of Louisiana",,"453","300","66"
+"229018","The University of Texas Permian Basin","2022","The University of Texas Permian Basin","Texas","Yes","1181","171137","University of Michigan-Dearborn",,"453","300","66"
+"229018","The University of Texas Permian Basin","2022","The University of Texas Permian Basin","Texas","Yes","1181","185129","New Jersey City University",,"453","300","66"
+"229018","The University of Texas Permian Basin","2022","The University of Texas Permian Basin","Texas","Yes","1181","188304","Western New Mexico University",,"453","300","66"
+"229018","The University of Texas Permian Basin","2022","The University of Texas Permian Basin","Texas","Yes","1181","199281","University of North Carolina at Pembroke",,"453","300","66"
+"229018","The University of Texas Permian Basin","2022","The University of Texas Permian Basin","Texas","Yes","1181","221768","The University of Tennessee-Martin",,"453","300","66"
+"229018","The University of Texas Permian Basin","2022","The University of Texas Permian Basin","Texas","Yes","1181","226833","Midwestern State University",,"453","300","66"
+"229018","The University of Texas Permian Basin","2022","The University of Texas Permian Basin","Texas","Yes","1181","228529","Tarleton State University",,"453","300","66"
+"229018","The University of Texas Permian Basin","2022","The University of Texas Permian Basin","Texas","Yes","1181","229814","West Texas A & M University",,"453","300","66"
+"229018","The University of Texas Permian Basin","2022","The University of Texas Permian Basin","Texas","Yes","1181","433660","Florida Gulf Coast University",,"453","300","66"
+"229027","The University of Texas at San Antonio","2022","The University of Texas at San Antonio","Texas","Yes","4583","225511","University of Houston",,"4444","3573","80"
+"229027","The University of Texas at San Antonio","2022","The University of Texas at San Antonio","Texas","Yes","4583","227216","University of North Texas",,"4444","3573","80"
+"229027","The University of Texas at San Antonio","2022","The University of Texas at San Antonio","Texas","Yes","4583","228459","Texas State University",,"4444","3573","80"
+"229027","The University of Texas at San Antonio","2022","The University of Texas at San Antonio","Texas","Yes","4583","228769","The University of Texas at Arlington",,"4444","3573","80"
+"229027","The University of Texas at San Antonio","2022","The University of Texas at San Antonio","Texas","Yes","4583","228787","The University of Texas at Dallas",,"4444","3573","80"
+"229027","The University of Texas at San Antonio","2022","The University of Texas at San Antonio","Texas","Yes","4583","228796","The University of Texas at El Paso",,"4444","3573","80"
+"229027","The University of Texas at San Antonio","2022","The University of Texas at San Antonio","Texas","Yes","4583","229115","Texas Tech University",,"4444","3573","80"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","100654","Alabama A & M University",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","100724","Alabama State University",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","102377","Tuskegee University",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","106412","University of Arkansas at Pine Bluff",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","131520","Howard University",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","132602","Bethune-Cookman University",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","133650","Florida Agricultural and Mechanical University",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","138947","Clark Atlanta University",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","159009","Grambling State University",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","160621","Southern University and A & M College",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","163453","Morgan State University",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","175342","Alcorn State University",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","175856","Jackson State University",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","176044","Mississippi Valley State University",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","199102","North Carolina A & T State University",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","199157","North Carolina Central University",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","218733","South Carolina State University",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","221838","Tennessee State University",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","224147","Texas A & M University-Corpus Christi",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","224554","Texas A & M University-Commerce",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","226091","Lamar University",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","227526","Prairie View A & M University",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","227881","Sam Houston State University",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","228431","Stephen F Austin State University",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","228705","Texas A & M University-Kingsville",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","229179","Texas Woman's University",,"1272","699","55"
+"229063","Texas Southern University","2022","Texas Southern University","Texas","Yes","1769","232265","Hampton University",,"1272","699","55"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","100663","University of Alabama at Birmingham",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","100706","University of Alabama in Huntsville",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","100751","The University of Alabama",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","100858","Auburn University",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","104151","Arizona State University Campus Immersion",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","104179","University of Arizona",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","106397","University of Arkansas",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","110635","University of California-Berkeley",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","110644","University of California-Davis",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","110653","University of California-Irvine",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","110662","University of California-Los Angeles",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","110671","University of California-Riverside",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","110705","University of California-Santa Barbara",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","110714","University of California-Santa Cruz",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","126562","University of Colorado Denver/Anschutz Medical Campus",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","126614","University of Colorado Boulder",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","126775","Colorado School of Mines",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","126818","Colorado State University-Fort Collins",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","129020","University of Connecticut",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","130943","University of Delaware",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","132903","University of Central Florida",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","133951","Florida International University",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","134097","Florida State University",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","134130","University of Florida",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","137351","University of South Florida",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","139940","Georgia State University",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","139959","University of Georgia",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","141574","University of Hawaii at Manoa",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","145600","University of Illinois Chicago",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","145637","University of Illinois Urbana-Champaign",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","151351","Indiana University-Bloomington",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","153603","Iowa State University",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","153658","University of Iowa",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","155317","University of Kansas",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","155399","Kansas State University",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","157085","University of Kentucky",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","157289","University of Louisville",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","159391","Louisiana State University and Agricultural & Mechanical College",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","160658","University of Louisiana at Lafayette",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","161253","University of Maine",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","163268","University of Maryland-Baltimore County",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","163286","University of Maryland-College Park",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","166629","University of Massachusetts-Amherst",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","171100","Michigan State University",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","172644","Wayne State University",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","174066","University of Minnesota-Twin Cities",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","176017","University of Mississippi",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","176080","Mississippi State University",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","176372","University of Southern Mississippi",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","178396","University of Missouri-Columbia",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","180461","Montana State University",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","180489","The University of Montana",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","181464","University of Nebraska-Lincoln",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","182281","University of Nevada-Las Vegas",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","182290","University of Nevada-Reno",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","183044","University of New Hampshire-Main Campus",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","185828","New Jersey Institute of Technology",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","186380","Rutgers University-New Brunswick",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","187985","University of New Mexico-Main Campus",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","196060","SUNY at Albany",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","196079","Binghamton University",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","196088","University at Buffalo",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","196097","Stony Brook University",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","199193","North Carolina State University at Raleigh",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","200332","North Dakota State University-Main Campus",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","201885","University of Cincinnati-Main Campus",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","203517","Kent State University at Kent",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","204796","Ohio State University-Main Campus",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","204857","Ohio University-Main Campus",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","207388","Oklahoma State University-Main Campus",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","207500","University of Oklahoma-Norman Campus",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","209542","Oregon State University",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","209551","University of Oregon",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","216339","Temple University",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","217882","Clemson University",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","218663","University of South Carolina-Columbia",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","220862","University of Memphis",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","221759","The University of Tennessee-Knoxville",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","225511","University of Houston",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","227216","University of North Texas",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","228723","Texas A & M University-College Station",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","228769","The University of Texas at Arlington",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","228778","The University of Texas at Austin",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","228787","The University of Texas at Dallas",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","228796","The University of Texas at El Paso",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","229027","The University of Texas at San Antonio",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","230728","Utah State University",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","230764","University of Utah",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","232186","George Mason University",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","232982","Old Dominion University",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","233921","Virginia Polytechnic Institute and State University",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","234030","Virginia Commonwealth University",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","234076","University of Virginia-Main Campus",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","236939","Washington State University",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","238032","West Virginia University",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","240444","University of Wisconsin-Madison",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","240453","University of Wisconsin-Milwaukee",,"6488","5561","86"
+"229115","Texas Tech University","2022","Texas Tech University","Texas","Yes","7650","243780","Purdue University-Main Campus",,"6488","5561","86"
+"229179","Texas Woman's University","2022","Texas Woman's University","Texas","Yes","2182","102094","University of South Alabama",,"1227","899","73"
+"229179","Texas Woman's University","2022","Texas Woman's University","Texas","Yes","2182","106458","Arkansas State University",,"1227","899","73"
+"229179","Texas Woman's University","2022","Texas Woman's University","Texas","Yes","2182","106704","University of Central Arkansas",,"1227","899","73"
+"229179","Texas Woman's University","2022","Texas Woman's University","Texas","Yes","2182","127741","University of Northern Colorado",,"1227","899","73"
+"229179","Texas Woman's University","2022","Texas Woman's University","Texas","Yes","2182","156125","Wichita State University",,"1227","899","73"
+"229179","Texas Woman's University","2022","Texas Woman's University","Texas","Yes","2182","176372","University of Southern Mississippi",,"1227","899","73"
+"229179","Texas Woman's University","2022","Texas Woman's University","Texas","Yes","2182","178402","University of Missouri-Kansas City",,"1227","899","73"
+"229179","Texas Woman's University","2022","Texas Woman's University","Texas","Yes","2182","199148","University of North Carolina at Greensboro",,"1227","899","73"
+"229179","Texas Woman's University","2022","Texas Woman's University","Texas","Yes","2182","220075","East Tennessee State University",,"1227","899","73"
+"229179","Texas Woman's University","2022","Texas Woman's University","Texas","Yes","2182","224147","Texas A & M University-Corpus Christi",,"1227","899","73"
+"229179","Texas Woman's University","2022","Texas Woman's University","Texas","Yes","2182","224554","Texas A & M University-Commerce",,"1227","899","73"
+"229179","Texas Woman's University","2022","Texas Woman's University","Texas","Yes","2182","227368","The University of Texas Rio Grande Valley",,"1227","899","73"
+"229179","Texas Woman's University","2022","Texas Woman's University","Texas","Yes","2182","227881","Sam Houston State University",,"1227","899","73"
+"229179","Texas Woman's University","2022","Texas Woman's University","Texas","Yes","2182","228705","Texas A & M University-Kingsville",,"1227","899","73"
+"229179","Texas Woman's University","2022","Texas Woman's University","Texas","Yes","2182","229063","Texas Southern University",,"1227","899","73"
+"229300","The University of Texas Health Science Center at Houston","2022","The University of Texas Health Science Center at Houston","Texas","No",,"196307","Upstate Medical University",,,,
+"229300","The University of Texas Health Science Center at Houston","2022","The University of Texas Health Science Center at Houston","Texas","No",,"209490","Oregon Health & Science University",,,,
+"229300","The University of Texas Health Science Center at Houston","2022","The University of Texas Health Science Center at Houston","Texas","No",,"214777","Pennsylvania State University-Main Campus",,,,
+"229300","The University of Texas Health Science Center at Houston","2022","The University of Texas Health Science Center at Houston","Texas","No",,"218335","Medical University of South Carolina",,,,
+"229300","The University of Texas Health Science Center at Houston","2022","The University of Texas Health Science Center at Houston","Texas","No",,"228635","University of Texas Southwestern Medical Center",,,,
+"229300","The University of Texas Health Science Center at Houston","2022","The University of Texas Health Science Center at Houston","Texas","No",,"228644","The University of Texas Health Science Center at San Antonio",,,,
+"229300","The University of Texas Health Science Center at Houston","2022","The University of Texas Health Science Center at Houston","Texas","No",,"228653","The University of Texas Medical Branch at Galveston",,,,
+"229337","Texas Tech University Health Sciences Center","2022","Texas Tech University Health Sciences Center","Texas","No",,,,,,,
+"229355","Tyler Junior College","2022","Tyler Junior College","Texas","Yes","1143","222576","Amarillo College",,"0","0",
+"229355","Tyler Junior College","2022","Tyler Junior College","Texas","Yes","1143","223427","Blinn College District",,"0","0",
+"229355","Tyler Junior College","2022","Tyler Junior College","Texas","Yes","1143","223816","Central Texas College",,"0","0",
+"229355","Tyler Junior College","2022","Tyler Junior College","Texas","Yes","1143","224350","Del Mar College",,"0","0",
+"229355","Tyler Junior College","2022","Tyler Junior College","Texas","Yes","1143","225308","Trinity Valley Community College",,"0","0",
+"229355","Tyler Junior College","2022","Tyler Junior College","Texas","Yes","1143","226019","Kilgore College",,"0","0",
+"229355","Tyler Junior College","2022","Tyler Junior College","Texas","Yes","1143","226134","Laredo College",,"0","0",
+"229355","Tyler Junior College","2022","Tyler Junior College","Texas","Yes","1143","227146","Navarro College",,"0","0",
+"229355","Tyler Junior College","2022","Tyler Junior College","Texas","Yes","1143","228158","South Plains College",,"0","0",
+"229355","Tyler Junior College","2022","Tyler Junior College","Texas","Yes","1143","409315","South Texas College",,"0","0",
+"229799","Weatherford College","2022","Weatherford College","Texas","Yes","270",,,,"0","0",
+"229814","West Texas A & M University","2022","West Texas A & M University","Texas","Yes","2200",,,,"1244","847","68"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"104708","Glendale Community College",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"105145","GateWay Community College",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"105154","Mesa Community College",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"105428","Phoenix College",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"105668","Rio Salado College",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"105747","Scottsdale Community College",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"105792","South Mountain Community College",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"132709","Broward College",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"135717","Miami Dade College",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"138187","Valencia College",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"202356","Cuyahoga Community College District",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"222992","Austin Community College District",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"224615","Dallas College",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"224642","El Paso Community College",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"225423","Houston Community College",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"227182","Lone Star College System",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"227854","St Philip's College",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"227924","San Antonio College",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"227979","San Jacinto Community College",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"228547","Tarrant County College District",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"232946","Northern Virginia Community College",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"233772","Tidewater Community College",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"246895","GateWay Community College-Central City",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"247834","Collin County Community College District",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"364016","Paradise Valley Community College",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"364025","Chandler-Gilbert Community College",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"384333","Estrella Mountain Community College",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"409315","South Texas College",,"583","207","36"
+"246354","Palo Alto College","2022","Palo Alto College","Texas","No",,"420398","Northwest Vista College",,"583","207","36"
+"247834","Collin County Community College District","2022","Collin County Community College District","Texas","Yes","266","122977","Santa Monica College",,"0","0",
+"247834","Collin County Community College District","2022","Collin County Community College District","Texas","Yes","266","132709","Broward College",,"0","0",
+"247834","Collin County Community College District","2022","Collin County Community College District","Texas","Yes","266","136358","Palm Beach State College",,"0","0",
+"247834","Collin County Community College District","2022","Collin County Community College District","Texas","Yes","266","138187","Valencia College",,"0","0",
+"247834","Collin County Community College District","2022","Collin County Community College District","Texas","Yes","266","182005","College of Southern Nevada",,"0","0",
+"247834","Collin County Community College District","2022","Collin County Community College District","Texas","Yes","266","222992","Austin Community College District",,"0","0",
+"247834","Collin County Community College District","2022","Collin County Community College District","Texas","Yes","266","227182","Lone Star College System",,"0","0",
+"247834","Collin County Community College District","2022","Collin County Community College District","Texas","Yes","266","409315","South Texas College",,"0","0",
+"409315","South Texas College","2022","South Texas College","Texas","No",,"105525","Pima Community College",,"54","34","63"
+"409315","South Texas College","2022","South Texas College","Texas","No",,"114789","Fresno City College",,"54","34","63"
+"409315","South Texas College","2022","South Texas College","Texas","No",,"121044","Pasadena City College",,"54","34","63"
+"409315","South Texas College","2022","South Texas College","Texas","No",,"134495","Hillsborough Community College",,"54","34","63"
+"409315","South Texas College","2022","South Texas College","Texas","No",,"135717","Miami Dade College",,"54","34","63"
+"409315","South Texas College","2022","South Texas College","Texas","No",,"138187","Valencia College",,"54","34","63"
+"409315","South Texas College","2022","South Texas College","Texas","No",,"198622","Guilford Technical Community College",,"54","34","63"
+"409315","South Texas College","2022","South Texas College","Texas","No",,"222992","Austin Community College District",,"54","34","63"
+"409315","South Texas College","2022","South Texas College","Texas","No",,"224642","El Paso Community College",,"54","34","63"
+"409315","South Texas College","2022","South Texas College","Texas","No",,"227182","Lone Star College System",,"54","34","63"
+"409315","South Texas College","2022","South Texas College","Texas","No",,"227924","San Antonio College",,"54","34","63"
+"409315","South Texas College","2022","South Texas College","Texas","No",,"227979","San Jacinto Community College",,"54","34","63"
+"409315","South Texas College","2022","South Texas College","Texas","No",,"247834","Collin County Community College District",,"54","34","63"
+"416801","The University of Texas MD Anderson Cancer Center","2022","The University of Texas MD Anderson Cancer Center","Texas","No",,,,,,,
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"104708","Glendale Community College",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"105145","GateWay Community College",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"105154","Mesa Community College",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"105428","Phoenix College",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"105668","Rio Salado College",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"105747","Scottsdale Community College",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"105792","South Mountain Community College",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"132709","Broward College",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"135717","Miami Dade College",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"138187","Valencia College",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"202356","Cuyahoga Community College District",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"222992","Austin Community College District",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"224615","Dallas College",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"224642","El Paso Community College",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"225423","Houston Community College",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"227182","Lone Star College System",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"227854","St Philip's College",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"227924","San Antonio College",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"227979","San Jacinto Community College",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"228547","Tarrant County College District",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"232946","Northern Virginia Community College",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"233772","Tidewater Community College",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"246354","Palo Alto College",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"246895","GateWay Community College-Central City",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"247834","Collin County Community College District",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"364016","Paradise Valley Community College",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"364025","Chandler-Gilbert Community College",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"384333","Estrella Mountain Community College",,"1059","566","53"
+"420398","Northwest Vista College","2022","Northwest Vista College","Texas","No",,"409315","South Texas College",,"1059","566","53"
+"459949","Texas A&M University-San Antonio","2022","Texas A&M University-San Antonio","Texas","Yes","423","110486","California State University-Bakersfield",,"936","670","72"
+"459949","Texas A&M University-San Antonio","2022","Texas A&M University-San Antonio","Texas","Yes","423","151360","Indiana University-Northwest",,"936","670","72"
+"459949","Texas A&M University-San Antonio","2022","Texas A&M University-San Antonio","Texas","Yes","423","222831","Angelo State University",,"936","670","72"
+"459949","Texas A&M University-San Antonio","2022","Texas A&M University-San Antonio","Texas","Yes","423","225432","University of Houston-Downtown",,"936","670","72"
+"459949","Texas A&M University-San Antonio","2022","Texas A&M University-San Antonio","Texas","Yes","423","226152","Texas A & M International University",,"936","670","72"
+"483036","Texas A&M University-Central Texas","2022","Texas A&M University-Central Texas","Texas","No",,"100812","Athens State University",,"0","0",
+"483036","Texas A&M University-Central Texas","2022","Texas A&M University-Central Texas","Texas","No",,"128106","Colorado State University Pueblo",,"0","0",
+"483036","Texas A&M University-Central Texas","2022","Texas A&M University-Central Texas","Texas","No",,"188304","Western New Mexico University",,"0","0",
+"483036","Texas A&M University-Central Texas","2022","Texas A&M University-Central Texas","Texas","No",,"224545","Texas A&M University-Texarkana",,"0","0",
+"483036","Texas A&M University-Central Texas","2022","Texas A&M University-Central Texas","Texas","No",,"228501","Sul Ross State University",,"0","0",
+"483036","Texas A&M University-Central Texas","2022","Texas A&M University-Central Texas","Texas","No",,"229018","The University of Texas Permian Basin",,"0","0",
+"483036","Texas A&M University-Central Texas","2022","Texas A&M University-Central Texas","Texas","No",,"229814","West Texas A & M University",,"0","0",
+"483036","Texas A&M University-Central Texas","2022","Texas A&M University-Central Texas","Texas","No",,"441937","California State University-Channel Islands",,"0","0",
+"483036","Texas A&M University-Central Texas","2022","Texas A&M University-Central Texas","Texas","No",,"482936","Florida Polytechnic University",,"0","0",
+"483036","Texas A&M University-Central Texas","2022","Texas A&M University-Central Texas","Texas","No",,"484905","University of North Texas at Dallas",,"0","0",
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","100654","Alabama A & M University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","100724","Alabama State University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","100830","Auburn University at Montgomery",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","101480","Jacksonville State University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","101587","University of West Alabama",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","101709","University of Montevallo",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","101879","University of North Alabama",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","138716","Albany State University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","139311","Clayton  State University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","139366","Columbus State University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","139764","Georgia Southwestern State University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","139861","Georgia College & State University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","157386","Morehead State University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","157401","Murray State University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","159009","Grambling State University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","159416","Louisiana State University-Shreveport",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","159717","McNeese State University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","159966","Nicholls State University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","159993","University of Louisiana at Monroe",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","160630","Southern University at New Orleans",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","175616","Delta State University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","198543","Fayetteville State University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","199157","North Carolina Central University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","199281","University of North Carolina at Pembroke",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","199999","Winston-Salem State University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","217864","Citadel Military College of South Carolina",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","218061","Francis Marion University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","218964","Winthrop University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","219602","Austin Peay State University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","221768","The University of Tennessee-Martin",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","232566","Longwood University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","232937","Norfolk State University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","233277","Radford University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","234155","Virginia State University",,"291","198","68"
+"484905","University of North Texas at Dallas","2022","University of North Texas at Dallas","Texas","Yes","116","482158","Middle Georgia State University",,"291","198","68"
+"492689","Texas Tech University Health Sciences Center-El Paso","2022","Texas Tech University Health Sciences Center-El Paso","Texas","No",,,,,,,
