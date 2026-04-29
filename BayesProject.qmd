@@ -1,11 +1,31 @@
 ---
 title: "Bayesian Estimation of First-Year Retention Rates: A Comparative Analysis of Commuter and Hispanic-Serving Institutions in Texas"
 author: "Eugene, Shikyna, Rehana"
-format: revealjs
-editor: visual
+date: "`r Sys.Date()`"
+format:
+  html:
+    embed-resources: true
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    theme: flatly
+    highlight-style: tango
+    include-in-header:
+      - text: |
+          <style>
+          .quarto-title-block .quarto-title-banner,
+          .quarto-title-block .quarto-title {
+            text-align: center;
+          }
+          </style>
+execute:
+  warning: false
+  message: false
+  echo: true
+editor: 
+  markdown: 
+    wrap: 72
 ---
-
-# Bayesian Estimation of First-Year Retention Rates: A Comparative Analysis of Commuter and Hispanic-Serving Institutions in Texas
 
 ## Setup & data preparation
 
@@ -16,6 +36,7 @@ library(coda)
 library(bayesplot)
 library(knitr)
 library(kableExtra)
+library(plotly)
 ```
 
 ```{r, message=FALSE, warning=FALSE}
@@ -25,9 +46,7 @@ y24 <- read_csv("Bayes CommuterHSI Data/2425.csv")
 hsi22 <- read_csv("Bayes CommuterHSI Data/HSI22.csv")
 hsi23 <- read_csv("Bayes CommuterHSI Data/HSI23.csv")
 hsi24 <- read_csv("Bayes CommuterHSI Data/HSI24.csv")
-```
 
-```{r}
 y22 <- y22 %>%
   select(-starts_with("CUSTOMCGIDS"), -'institution name...4', -'HD2022.State abbreviation', -'IC2022_PCCAMPUSES.Sector of institution') %>% distinct()
 y23 <- y23 %>%
@@ -60,7 +79,9 @@ uni <- uni %>% select("unitid", "name", "tot_pop", "hsi", "commuter", "cohort23"
 uni <- uni %>% filter(unitid != "229355")
 ```
 
-In the final table, we have \`r ncol(uni)\` variables. This includes; the school's ID, name, population, commuter and HSI flags, and the cohort and retention rate information for the years 2022, 2023, and 2024.
+In the final table, we have `r ncol(uni)` variables. This includes; the
+school's ID, name, population, commuter and HSI flags, and the cohort
+and retention rate information for the years 2022, 2023, and 2024.
 
 ## Descriptive Summary
 
@@ -105,13 +126,43 @@ We can test;
 
 Uninformative: Beta (1, 1) - Completely flat prior
 
+```{r, echo=F}
+plot_ly(x = seq(0, 1, length.out = 100), y = dbeta(seq(0, 1, length.out = 100), 1, 1), type = 'scatter', mode = 'lines', fill = 'tozeroy') %>%
+  layout(
+    title = paste0("Beta Distribution (Alpha =", 1, ", Beta =", 1, ")"),
+    xaxis = list(title = "x"),
+    yaxis = list(title = "Density")
+  )
+```
+
+\
 Weakly Informative: Beta (2, 2) - Slight pull to 0.5
 
-Informative: Beta (8, 2) - Centered around 81% national average
+```{r, echo=F}
+plot_ly(x = seq(0, 1, length.out = 100), y = dbeta(seq(0, 1, length.out = 100), 2, 2), type = 'scatter', mode = 'lines', fill = 'tozeroy') %>%
+  layout(
+    title = paste0("Beta Distribution (Alpha =", 2, ", Beta =", 2, ")"),
+    xaxis = list(title = "x"),
+    yaxis = list(title = "Density")
+  )
+```
+
+Informative: Beta (7, 3) - Centered near our calculated 71.5% average
+retention rate.
+
+```{r, echo=F}
+plot_ly(x = seq(0, 1, length.out = 100), y = dbeta(seq(0, 1, length.out = 100), 7, 3), type = 'scatter', mode = 'lines', fill = 'tozeroy') %>%
+  layout(
+    title = paste0("Beta Distribution (Alpha =", 7, ", Beta =", 3, ")"),
+    xaxis = list(title = "x"),
+    yaxis = list(title = "Density")
+  )
+```
 
 \*Make sure to include credible intervals
 
--- Maybe consider using posterior of previous years as prior for following years.
+-- Maybe consider using posterior of previous years as prior for
+following years.
 
 -- Use posterior predictive to check adequacy of our model.
 
@@ -123,13 +174,20 @@ Informative: Beta (8, 2) - Centered around 81% national average
 
 ## Posterior probability statements
 
-Such as probability HSI-Commuter group has lower retention than residential groups
+Such as probability HSI-Commuter group has lower retention than
+residential groups
 
 # Part 2: Hierarchical Beta-Binomial Model (Main Analysis)
 
-Because retention is a count of successes out of a fixed cohort, we use the Binomial likelihood with a conjugate Beta prior rather than the Normal-Normal hierarchy from class (l18).
+Because retention is a count of successes out of a fixed cohort, we use
+the Binomial likelihood with a conjugate Beta prior rather than the
+Normal-Normal hierarchy from class (l18).
 
-The conjugate model we used assumes all the institutions within a group share the same retention probability, which is kind of unrealistic. The hierarchical model allows each institution (i) have its own (theta_i), but institutions within the same group (g) share a common Beta distribution:
+The conjugate model we used assumes all the institutions within a group
+share the same retention probability, which is kind of unrealistic. The
+hierarchical model allows each institution (i) have its own (theta_i),
+but institutions within the same group (g) share a common Beta
+distribution:
 
 $$\text{Layer 1 (likelihood):} \quad k_i \mid n_i, \theta_i \sim \text{Binomial}(n_i, \theta_i)$$
 
@@ -137,11 +195,17 @@ $$\text{Layer 2 (prior):} \quad \theta_i \mid \alpha_{g[i]}, \beta_{g[i]} \sim \
 
 $$\text{Layer 3 (hyperprior):} \quad \mu_g \sim \text{Beta}(8, 2), \quad \kappa_g \sim \text{Gamma}(2, 0.5) + 2$$
 
-where $\alpha_g = \mu_g \kappa_g$ and $\beta_g = (1 - \mu_g) \kappa_g$. This reparameterization makes $\mu_g$ the group mean and $\kappa_g$ a concentration parameter (larger = tighter around the group mean).
+where $\alpha_g = \mu_g \kappa_g$ and $\beta_g = (1 - \mu_g) \kappa_g$.
+This reparameterization makes $\mu_g$ the group mean and $\kappa_g$ a
+concentration parameter (larger = tighter around the group mean).
 
-We chose the nation average for the Beta prior with concentration around 80%.
+We chose the nation average for the Beta prior with concentration around
+80%.
 
-We chose Gamma with a mean of 4 to allow kappa to range broadly. I also seen that sometimes it is recommended to add a constant, because Beta distributions with a value less than 1 are U-shaped, which wouldn't make sense with retention rates.
+We chose Gamma with a mean of 4 to allow kappa to range broadly. I also
+seen that sometimes it is recommended to add a constant, because Beta
+distributions with a value less than 1 are U-shaped, which wouldn't make
+sense with retention rates.
 
 **From lectures: 17, 18, 19**
 
@@ -169,23 +233,32 @@ We chose Gamma with a mean of 4 to allow kappa to range broadly. I also seen tha
 
 ## Group-level posterior summaries
 
-\*Make sure to include credible intervals for each group's hyperparameter mean using quantile(mu_samples, c(0.025, 0.975))
+\*Make sure to include credible intervals for each group's
+hyperparameter mean using quantile(mu_samples, c(0.025, 0.975))
 
 -- Plot & compare credible intervals by year for each group
 
 ## Institution-level posteriors / shrinkage
 
-\*Make sure to include credible intervals. This is where the smaller schools will have their intervals pulled toward the group mean more than larger schools.
+\*Make sure to include credible intervals. This is where the smaller
+schools will have their intervals pulled toward the group mean more than
+larger schools.
 
 ## Posterior probability statements from the hierarchical model
 
 # Part 3: Model Comparison
 
-Compare conjugate pooled posteriors against hierarchical group-level posteriors for the same four groups. The hierarchical intervals will be wider for small groups (appropriate acknowledgment of institutional heterogeneity) and may shift means slightly toward the overall data pattern.
+Compare conjugate pooled posteriors against hierarchical group-level
+posteriors for the same four groups. The hierarchical intervals will be
+wider for small groups (appropriate acknowledgment of institutional
+heterogeneity) and may shift means slightly toward the overall data
+pattern.
 
-\*Make sure to include credible intervals from conjugate and hierarchical models
+\*Make sure to include credible intervals from conjugate and
+hierarchical models
 
--- Maybe try a multinomial logistic regression to compare all the groups adds rigor, rather than doing all the groups independently.
+-- Maybe try a multinomial logistic regression to compare all the groups
+adds rigor, rather than doing all the groups independently.
 
 ## Bayesian Anova
 
@@ -197,9 +270,12 @@ Points to hit:
 
 -   Key findings on HSI vs non-HSI and commuter vs residential retention
 -   Specifically what the posteriors say about institutions like UHD
--   The value added by the hierarchical model (shrinkage, institutional heterogeneity)
--   Limitations: single year, institution-level aggregation ignores student-level predictors, etc.
--   Future directions: multi-year trend, student-level data, additional covariates
+-   The value added by the hierarchical model (shrinkage, institutional
+    heterogeneity)
+-   Limitations: single year, institution-level aggregation ignores
+    student-level predictors, etc.
+-   Future directions: multi-year trend, student-level data, additional
+    covariates
 
 **From lectures: 5** - Has good language on interpretations
 
