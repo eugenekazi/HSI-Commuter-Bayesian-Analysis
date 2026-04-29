@@ -5,11 +5,11 @@ format: revealjs
 editor: visual
 ---
 
-# Bayesian Estimation of First-Year Retention Rates: A Comparative Analysis of Commuter and Hispanic-Serving Institutions in Texas 
+# Bayesian Estimation of First-Year Retention Rates: A Comparative Analysis of Commuter and Hispanic-Serving Institutions in Texas
 
 ## Setup & data preparation
 
-```{r}
+```{r, include=FALSE}
 library(tidyverse)
 library(rjags)
 library(coda)
@@ -18,7 +18,7 @@ library(knitr)
 library(kableExtra)
 ```
 
-```{r}
+```{r, message=FALSE, warning=FALSE}
 y22 <- read_csv("Bayes CommuterHSI Data/2223.csv")
 y23 <- read_csv("Bayes CommuterHSI Data/2324.csv")
 y24 <- read_csv("Bayes CommuterHSI Data/2425.csv")
@@ -29,39 +29,56 @@ hsi24 <- read_csv("Bayes CommuterHSI Data/HSI24.csv")
 
 ```{r}
 y22 <- y22 %>%
-  select(-starts_with("CUSTOMCGIDS"), -'institution name...4', -'HD2022.State abbreviation') %>% distinct()
+  select(-starts_with("CUSTOMCGIDS"), -'institution name...4', -'HD2022.State abbreviation', -'IC2022_PCCAMPUSES.Sector of institution') %>% distinct()
 y23 <- y23 %>%
-  select(-starts_with("CUSTOMCGIDS"), -'institution name...4', -'HD2023.State abbreviation') %>% distinct()
+  select(-starts_with("CUSTOMCGIDS"), -'institution name...4', -'HD2023.State abbreviation', -'IC2023_PCCAMPUSES.Sector of institution') %>% distinct()
 y24 <- y24 %>%
-  select(-starts_with("CUSTOMCGIDS"), -'institution name...4', -'HD2024.State abbreviation', -'XROOMCAP', -'XRET_PCF', -'XRET_NMF', -'XRRFTCTA') %>% distinct()
+  select(-starts_with("CUSTOMCGIDS"), -'institution name...4', -'HD2024.State abbreviation', -'XROOMCAP', -'XRET_PCF', -'XRET_NMF', -'XRRFTCTA', -'HD2024.Sector of institution') %>% distinct()
 
 hsi22 <- hsi22 %>% 
   select(-'IDX_EF', -'EF2022A.Level of student')
 hsi23 <- hsi23 %>% 
   select(-'IDX_EF', -'EF2023A.Level of student')
 hsi24 <- hsi24 %>% 
-  select(-'IDX_EF', -'EF2024A.Level of student')
+  select(-'IDX_EF', -'EF2024A.Level of student') %>% rename('hisp_pop' = 'EF2024A.Hispanic total', 'tot_pop' = 'EF2024A.Grand total')
 
-y22 <- y22 %>% rename('name' = 'institution name...2', 'housing' = 'IC2022.Institution provide on-campus housing', 'dorm_cap' = 'IC2022.Total dormitory capacity', 'cohort21' = 'EF2022D_RV.Full-time adjusted fall 2021 cohort', 'return_cohort22' = 'EF2022D_RV.Students from the full-time adjusted fall 2021 cohort enrolled in fall 2022', 'ret_rate' = 'EF2022D_RV.Full-time retention rate, 2022')
+y22 <- y22 %>% rename('name' = 'institution name...2', 'housing' = 'IC2022.Institution provide on-campus housing', 'dorm_cap' = 'IC2022.Total dormitory capacity', 'cohort21' = 'EF2022D_RV.Full-time adjusted fall 2021 cohort', 'return_cohort22' = 'EF2022D_RV.Students from the full-time adjusted fall 2021 cohort enrolled in fall 2022', 'ret_rate22' = 'EF2022D_RV.Full-time retention rate, 2022')
 
-y23 <- y23 %>% rename('name' = 'institution name...2', 'housing' = 'IC2023.Institution provide nstitutionally-controlled housing (on-campus and/or off-campus)', 'dorm_cap' = 'IC2023.Housing capacity', 'cohort22' = 'EF2023D_RV.Full-time adjusted fall 2022 cohort', 'return_cohort23' = 'EF2023D_RV.Students from the full-time adjusted fall 2022 cohort enrolled in fall 2023', 'ret_rate' = 'EF2023D_RV.Full-time retention rate, 2023')
+y23 <- y23 %>% rename('name' = 'institution name...2', 'housing' = 'IC2023.Institution provide nstitutionally-controlled housing (on-campus and/or off-campus)', 'dorm_cap' = 'IC2023.Housing capacity', 'cohort22' = 'EF2023D_RV.Full-time adjusted fall 2022 cohort', 'return_cohort23' = 'EF2023D_RV.Students from the full-time adjusted fall 2022 cohort enrolled in fall 2023', 'ret_rate23' = 'EF2023D_RV.Full-time retention rate, 2023')
 
-y24 <- y24 %>% rename('name' = 'institution name...2', 'housing' = 'COST1_2024.Institution provide Institutionally-controlled housing (on-campus and/or off-campus)', 'dorm_cap' = 'COST1_2024.Housing capacity', 'cohort23' = 'EF2024D.Full-time adjusted fall 2023 cohort', 'return_cohort23' = 'EF2024D.Students from the full-time adjusted fall 2023 cohort enrolled in fall 2024', 'ret_rate' = 'EF2024D.Full-time retention rate, 2024')
+y24 <- y24 %>% rename('name' = 'institution name...2', 'housing' = 'COST1_2024.Institution provide Institutionally-controlled housing (on-campus and/or off-campus)', 'dorm_cap' = 'COST1_2024.Housing capacity', 'cohort23' = 'EF2024D.Full-time adjusted fall 2023 cohort', 'return_cohort24' = 'EF2024D.Students from the full-time adjusted fall 2023 cohort enrolled in fall 2024', 'ret_rate24' = 'EF2024D.Full-time retention rate, 2024') %>% filter(cohort23 > 0)
 
+# Classify institutions: HSI & Commuter Status
+y24 <- left_join(y24, select(hsi24, unitid, tot_pop, hisp_pop), by='unitid') %>% mutate('hsi' = (hisp_pop / tot_pop) > .25, 'commuter' = (dorm_cap / tot_pop) < .25)
+y24$commuter[y24$housing == "No"] <- T
+
+y24 <- y24 %>% select(-'housing', -'dorm_cap', -'hisp_pop', -'year')
+
+uni <- y24 %>% left_join(select(y23, 'unitid', 'cohort22', 'return_cohort23', 'ret_rate23'), by='unitid') %>% left_join(select(y22, 'unitid', 'cohort21', 'return_cohort22', 'ret_rate22'), by='unitid')
+
+uni <- uni %>% select("unitid", "name", "tot_pop", "hsi", "commuter", "cohort23", "return_cohort24", "ret_rate24", "cohort22", "return_cohort23", "ret_rate23", "cohort21", "return_cohort22", "ret_rate22")
+uni <- uni %>% filter(unitid != "229355")
 ```
 
-I believe the data only gave the previous year's adjusted cohort. Let's discuss what we want to do about this.
-
-## Classify institutions: HSI & Commuter Status
-
-```{r}
-
-```
+In the final table, we have \`r ncol(uni)\` variables. This includes; the school's ID, name, population, commuter and HSI flags, and the cohort and retention rate information for the years 2022, 2023, and 2024.
 
 ## Descriptive Summary
 
 ```{r}
-
+uni %>% select(tot_pop, hsi, commuter, ret_rate24, ret_rate23, ret_rate22) %>% summarise(
+  n_schools = nrow(uni),
+  hsi_proportion = round(sum(uni$hsi) / nrow(uni),  2),
+  commuter_proportion = round(sum(uni$commuter) / nrow(uni), 2),
+  avg_ret_rate24 = mean(ret_rate24),
+  avg_ret_rate23 = mean(ret_rate23),
+  avg_ret_rate22 = mean(ret_rate22),
+) %>% pivot_longer(everything(), names_to = "Statistic", values_to = "Value") %>%
+  kable(digits = 3, caption = "Summary of Texas public 4-year institutions") %>%
+  kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed"),
+    full_width = FALSE,
+    position = "center"
+  )
 ```
 
 # Part 1: Conjugate Beta-Binomial Analysis (base model)
@@ -94,6 +111,10 @@ Informative: Beta (8, 2) - Centered around 81% national average
 
 \*Make sure to include credible intervals
 
+-- Maybe consider using posterior of previous years as prior for following years.
+
+-- Use posterior predictive to check adequacy of our model.
+
 **From lectures: 4, 9, 10**
 
 ## Compute posteriors under each prior
@@ -104,11 +125,11 @@ Informative: Beta (8, 2) - Centered around 81% national average
 
 Such as probability HSI-Commuter group has lower retention than residential groups
 
-# Part 2: Hierachical Binomial-Beta Model (Main Analysis)
+# Part 2: Hierarchical Beta-Binomial Model (Main Analysis)
 
 Because retention is a count of successes out of a fixed cohort, we use the Binomial likelihood with a conjugate Beta prior rather than the Normal-Normal hierarchy from class (l18).
 
-The conjugate model we used assumes all the institutions within a group share the same retention probability, which is kind of unrealistic. The heirachical model allows each institution (i) have its own (theta_i), but institutions within the same group (g) share a common Beta distribution:
+The conjugate model we used assumes all the institutions within a group share the same retention probability, which is kind of unrealistic. The hierarchical model allows each institution (i) have its own (theta_i), but institutions within the same group (g) share a common Beta distribution:
 
 $$\text{Layer 1 (likelihood):} \quad k_i \mid n_i, \theta_i \sim \text{Binomial}(n_i, \theta_i)$$
 
@@ -144,9 +165,13 @@ We chose Gamma with a mean of 4 to allow kappa to range broadly. I also seen tha
 
 **From lectures: 16**
 
+-- Create MCMC
+
 ## Group-level posterior summaries
 
 \*Make sure to include credible intervals for each group's hyperparameter mean using quantile(mu_samples, c(0.025, 0.975))
+
+-- Plot & compare credible intervals by year for each group
 
 ## Institution-level posteriors / shrinkage
 
@@ -160,7 +185,11 @@ Compare conjugate pooled posteriors against hierarchical group-level posteriors 
 
 \*Make sure to include credible intervals from conjugate and hierarchical models
 
-**From lectures: 17, 19**
+-- Maybe try a multinomial logistic regression to compare all the groups adds rigor, rather than doing all the groups independently.
+
+## Bayesian Anova
+
+**From lectures: 17, 19, 20**
 
 # Conclusion:
 
@@ -172,7 +201,7 @@ Points to hit:
 -   Limitations: single year, institution-level aggregation ignores student-level predictors, etc.
 -   Future directions: multi-year trend, student-level data, additional covariates
 
-**From lectures: 5** - has good language on interpretations
+**From lectures: 5** - Has good language on interpretations
 
 # References
 
