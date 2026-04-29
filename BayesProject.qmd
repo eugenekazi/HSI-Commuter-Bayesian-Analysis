@@ -1,6 +1,9 @@
 ---
 title: "Bayesian Estimation of First-Year Retention Rates: A Comparative Analysis of Commuter and Hispanic-Serving Institutions in Texas"
-author: "Eugene, Shikyna, Rehana"
+author:   
+  - Eugene Kazi
+  - Shikyna William
+  - Rehana Hajee
 date: "`r Sys.Date()`"
 format:
   html:
@@ -17,6 +20,9 @@ format:
           .quarto-title-block .quarto-title {
             text-align: center;
           }
+          .quarto-title-meta > div {
+            text-align: center;
+          }
           </style>
   #pdf:
     #toc: true
@@ -30,7 +36,7 @@ editor:
     wrap: 72
 ---
 
-# INTRODUCTION, PROBLEM, PURPOSE
+# Introduction, Problem, Purpose
 
 This section should include the data and problem descriptions, your
 background research and information on related studies, information as
