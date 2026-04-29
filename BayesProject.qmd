@@ -18,6 +18,9 @@ format:
             text-align: center;
           }
           </style>
+  #pdf:
+    #toc: true
+    #number-sections: true
 execute:
   warning: false
   message: false
@@ -26,6 +29,14 @@ editor:
   markdown: 
     wrap: 72
 ---
+
+# INTRODUCTION, PROBLEM, PURPOSE
+
+This section should include the data and problem descriptions, your
+background research and information on related studies, information as
+to how your data were collected (with proper referencing) , and the
+hypotheses or questions you want answered using Statistics. A statement
+as to why your project is important or relevant should also be included.
 
 ## Setup & data preparation
 
@@ -94,7 +105,7 @@ uni %>% select(tot_pop, hsi, commuter, ret_rate24, ret_rate23, ret_rate22) %>% s
   avg_ret_rate23 = mean(ret_rate23),
   avg_ret_rate22 = mean(ret_rate22),
 ) %>% pivot_longer(everything(), names_to = "Statistic", values_to = "Value") %>%
-  kable(digits = 3, caption = "Summary of Texas public 4-year institutions") %>%
+  kbl(digits = 3, caption = "Summary of Texas public 4-year institutions") %>%
   kable_styling(
     bootstrap_options = c("striped", "hover", "condensed"),
     full_width = FALSE,
@@ -104,15 +115,87 @@ uni %>% select(tot_pop, hsi, commuter, ret_rate24, ret_rate23, ret_rate22) %>% s
 
 # Part 1: Conjugate Beta-Binomial Analysis (base model)
 
-The baseline model pools all students within each of the four groups
+The baseline model pools all students within each of the four groups:
 
-$$k_g \mid n_g, \theta_g \sim \text{Binomial}(n_g, \theta_g)$$
+$$X_g \mid n_g, \theta_g \sim \text{Binomial}(n_g, \theta_g)$$
+
+```{r}
+# Likelihood
+likelihood_p1 <- data.frame(
+  Symbol = c("\\(X_g\\)", "\\(n_g\\)", "\\(\\theta_g\\)", "\\(\\text{Bin}(n, \\theta)\\)"),
+  Name = c("Pooled retained count (random variable)",
+           "Pooled cohort size",
+           "True retention probability for group \\(g\\)",
+           "Binomial distribution"),
+  Meaning = c("Total number of students across all institutions in group \\(g\\) who returned for their second year",
+              "Total number of full-time first-time students across all institutions in group \\(g\\)",
+              "Unknown true probability that a student in group \\(g\\) returns for their second year",
+              "Out of \\(n\\) independent trials, each succeeding with probability \\(\\theta\\)"),
+  Source = c("Observed data, summed within group",
+             "Observed data, summed within group",
+             "Unknown parameter, estimated analytically",
+             "Distribution shape")
+)
+
+kbl(likelihood_p1, escape = FALSE) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                latex_options = c("striped", "hold_position"),
+                full_width = FALSE) %>%
+  row_spec(0, bold = TRUE, background = "#34495E", color = "white")
+```
 
 $$\theta_g \sim \text{Beta}(\alpha_0, \beta_0)$$
 
+```{r}
+# Prior
+prior_p1 <- data.frame(
+  Symbol = c("\\(\\theta_g\\)", "\\(\\alpha\\)", "\\(\\beta\\)", "\\(\\text{Beta}(\\alpha, \\beta)\\)"),
+  Name = c("True retention probability for group \\(g\\)",
+           "Prior shape parameter (alpha)",
+           "Prior shape parameter (beta)",
+           "Beta distribution"),
+  Meaning = c("Same as in the likelihood",
+              "Interpretable as the number of \"prior successes\"",
+              "Interpretable as the number of \"prior failures\"",
+              "Flexible distribution on \\([0, 1]\\) defined by two shape values"),
+  Source = c("Unknown parameter",
+             "Fixed by us (varies by prior choice: 1, 2, or 7)",
+             "Fixed by us (varies by prior choice: 1, 2, or 3)",
+             "Distribution shape")
+)
+
+kbl(prior_p1, escape = FALSE) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                latex_options = c("striped", "hold_position"),
+                full_width = FALSE) %>%
+  row_spec(0, bold = TRUE, background = "#34495E", color = "white")
+```
+
 The conjugate posterior would be:
 
-$$\theta_g \mid k_g \sim \text{Beta}(\alpha_0 + k_g, \beta_0 + n_g - k_g)$$
+$$\theta_g \mid x_g \sim \text{Beta}(\alpha_0 + x_g, \beta_0 + n_g - x_g)$$
+
+```{r}
+# Posterior
+posterior_p1 <- data.frame(
+  Symbol = c("\\(\\theta_g \\mid x_g\\)", "\\(\\alpha + x_g\\)", "\\(\\beta + n_g - x_g\\)"),
+  Name = c("Posterior distribution of \\(\\theta_g\\) given the data",
+           "Updated alpha (posterior shape parameter 1)",
+           "Updated beta (posterior shape parameter 2)"),
+  Meaning = c("Our updated belief about \\(\\theta_g\\) after observing \\(x_g\\) retained students out of \\(n_g\\)",
+              "Prior alpha plus observed successes",
+              "Prior beta plus observed failures"),
+  Source = c("Conjugate result (closed-form Beta)",
+             "Computed from data and prior",
+             "Computed from data and prior")
+)
+
+kbl(posterior_p1, escape = FALSE, caption = "Posterior (conjugate update)") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                latex_options = c("striped", "hold_position"),
+                full_width = FALSE) %>%
+  row_spec(0, bold = TRUE, background = "#34495E", color = "white")
+```
 
 **From Lectures: 7, 9**
 
@@ -189,18 +272,91 @@ hierarchical model allows each institution (i) have its own (theta_i),
 but institutions within the same group (g) share a common Beta
 distribution:
 
-$$\text{Layer 1 (likelihood):} \quad k_i \mid n_i, \theta_i \sim \text{Binomial}(n_i, \theta_i)$$
+$$\text{Layer 1 (likelihood):} \quad X_{ig} \mid n_{ig}, \theta_{ig} \sim \text{Binomial}(n_{ig}, \theta_{ig})$$
 
-$$\text{Layer 2 (prior):} \quad \theta_i \mid \alpha_{g[i]}, \beta_{g[i]} \sim \text{Beta}(\alpha_{g[i]}, \beta_{g[i]})$$
+```{r}
+# Layer 1: Likelihood
+layer1 <- data.frame(
+  Symbol = c("\\(X_{ig}\\)", "\\(n_{ig}\\)", "\\(\\theta_{ig}\\)", "\\(\\text{Bin}(n, \\theta)\\)"),
+  Name = c("Retained count (random variable)",
+           "Cohort size",
+           "True retention probability",
+           "Binomial distribution"),
+  Meaning = c("Number of students from institution \\(i\\) in group \\(g\\) who returned for their second year",
+              "Total full-time first-time students at institution \\(i\\) in group \\(g\\) who entered the previous fall",
+              "Unknown true probability that a student at institution \\(i\\) in group \\(g\\) returns for year two",
+              "Out of \\(n\\) independent trials, each succeeding with probability \\(\\theta\\)"),
+  Source = c("Observed data (`retained` column)",
+             "Observed data (`cohort_n` column)",
+             "Unknown parameter, estimated by JAGS",
+             "Distribution shape")
+)
 
-$$\text{Layer 3 (hyperprior):} \quad \mu_g \sim \text{Beta}(8, 2), \quad \kappa_g \sim \text{Gamma}(2, 0.5) + 2$$
+kbl(layer1, escape = FALSE) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                latex_options = c("striped", "hold_position"),
+                full_width = FALSE) %>%
+  row_spec(0, bold = TRUE, background = "#34495E", color = "white")
+```
 
-where $\alpha_g = \mu_g \kappa_g$ and $\beta_g = (1 - \mu_g) \kappa_g$.
-This reparameterization makes $\mu_g$ the group mean and $\kappa_g$ a
-concentration parameter (larger = tighter around the group mean).
+$$\text{Layer 2 (prior):} \quad \theta_{ig} \mid \alpha_{g}, \beta_g \sim \text{Beta}(\alpha_g, \beta_g)$$
 
-We chose the nation average for the Beta prior with concentration around
-80%.
+```{r}
+# Layer 2: Prior
+layer2 <- data.frame(
+  Symbol = c("\\(\\theta_{ig}\\)", "\\(\\alpha_g\\)", "\\(\\beta_g\\)", "\\(\\text{Beta}(\\alpha, \\beta)\\)"),
+  Name = c("True retention probability",
+           "Beta shape parameter (alpha) for group \\(g\\)",
+           "Beta shape parameter (beta) for group \\(g\\)",
+           "Beta distribution"),
+  Meaning = c("Same as Layer 1",
+              "Prior successes parameter for the group-level Beta",
+              "Prior failures parameter for the group-level Beta",
+              "Flexible distribution on \\([0, 1]\\) defined by two shape values"),
+  Source = c("Unknown parameter",
+             "Computed: \\(\\alpha_g = \\mu_g \\cdot \\kappa_g\\)",
+             "Computed: \\(\\beta_g = (1 - \\mu_g) \\cdot \\kappa_g\\)",
+             "Distribution shape")
+)
+
+kbl(layer2, escape = FALSE) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                latex_options = c("striped", "hold_position"),
+                full_width = FALSE) %>%
+  row_spec(0, bold = TRUE, background = "#34495E", color = "white")
+```
+
+$$\text{Layer 3 (hyperprior):} \quad \mu_g \sim \text{Beta}(7, 3), \quad \kappa_g \sim \text{Gamma}(2, 0.5) + 2$$
+
+```{r}
+# Layer 3: Hyperprior
+layer3 <- data.frame(
+  Symbol = c("\\(\\mu_g\\)", "\\(\\kappa_g\\)", "\\(\\text{Beta}(7, 3)\\)", "\\(\\text{Gamma}(2, 0.5) + 2\\)"),
+  Name = c("Group mean retention",
+           "Concentration parameter for group \\(g\\)",
+           "Hyperprior on \\(\\mu_g\\)",
+           "Hyperprior on \\(\\kappa_g\\)"),
+  Meaning = c("Average retention probability for group \\(g\\); the main parameter for cross-group comparisons",
+              "Controls how tightly institutions within group \\(g\\) cluster around \\(\\mu_g\\)",
+              "Encodes prior belief that group means are around 0.7 (computed average)",
+              "Weakly informative prior; the \\(+2\\) shift keeps \\(\\kappa_g \\geq 2\\) to avoid U-shaped Betas"),
+  Source = c("Unknown parameter, estimated by JAGS",
+             "Unknown parameter, estimated by JAGS",
+             "Fixed by us in the JAGS model",
+             "Fixed by us in the JAGS model")
+)
+
+kbl(layer3, escape = FALSE) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                latex_options = c("striped", "hold_position"),
+                full_width = FALSE) %>%
+  row_spec(0, bold = TRUE, background = "#34495E", color = "white")
+```
+
+where $\alpha_g = \mu_g \kappa_g$ and $\beta_g = (1 - \mu_g) \kappa_g$,
+
+We chose the calculated average for the Beta prior with concentration
+near 71.5%.
 
 We chose Gamma with a mean of 4 to allow kappa to range broadly. I also
 seen that sometimes it is recommended to add a constant, because Beta
