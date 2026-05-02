@@ -94,6 +94,18 @@ uni <- y24 %>% left_join(select(y23, 'unitid', 'cohort22', 'return_cohort23', 'r
 
 uni <- uni %>% select("unitid", "name", "tot_pop", "hsi", "commuter", "cohort23", "return_cohort24", "ret_rate24", "cohort22", "return_cohort23", "ret_rate23", "cohort21", "return_cohort22", "ret_rate22")
 uni <- uni %>% filter(unitid != "229355")
+
+uni <- uni %>%
+  mutate(
+    group = case_when(
+      hsi == TRUE  & commuter == TRUE  ~ "HSI_Commuter",
+      hsi == TRUE  & commuter == FALSE ~ "HSI_Residential",
+      hsi == FALSE & commuter == TRUE  ~ "NonHSI_Commuter",
+      hsi == FALSE & commuter == FALSE ~ "NonHSI_Residential"
+    ),
+    group = factor(group, levels = c("HSI_Commuter", "HSI_Residential",
+                                     "NonHSI_Commuter", "NonHSI_Residential"))
+  )
 ```
 
 In the final table, we have `r ncol(uni)` variables. This includes; the
@@ -372,6 +384,24 @@ sense with retention rates.
 **From lectures: 17, 18, 19**
 
 ## Prepare data for JAGS
+
+```{r jags_data_prep}
+n_inst   <- nrow(uni)
+n_groups <- length(levels(uni$group))
+
+# Integer group index for each institution
+uni$group_idx <- as.integer(uni$group)
+
+jags_data <- list(
+  k          = uni$retained,
+  n          = uni$cohort_n,
+  group_idx  = uni$group_idx,
+  n_inst     = n_inst,
+  n_groups   = n_groups
+)
+
+str(jags_data)
+```
 
 ## JAGS model
 
