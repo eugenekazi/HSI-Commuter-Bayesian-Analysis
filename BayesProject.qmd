@@ -38,11 +38,69 @@ editor:
 
 # Introduction, Problem, Purpose
 
-This section should include the data and problem descriptions, your
-background research and information on related studies, information as
-to how your data were collected (with proper referencing) , and the
-hypotheses or questions you want answered using Statistics. A statement
-as to why your project is important or relevant should also be included.
+### Opening
+
+First-year retention is one of the most watched indicators of
+institutional performance in higher education. Placed in the heart of
+one of the largest and most diverse cities in the United States, our
+school, the University of Houston-Downtown carries the attribute of a
+campus that lacks housing, and is proudly recognized as a Hispanic
+Serving Institution. These characteristics of our campus raised the
+question on whether any recent studies on the effect of retention rate
+throughout Texas exists. With UHD being both an HSI and a commuter-heavy
+campus, these two traits intersect at most Texas public 4-year
+universities but are rarely studied together. This project applies
+Bayesian methods to estimate first-year retention rates across Texas
+public 4-year institutions, with a focus on whether HSI status and
+commuter status interact to produce different retention patterns.
+
+### Background & Related Studies
+
+The literature on student retention has long emphasized institutional
+context as a predictor of student outcomes. Astin (1993) and other
+foundational researchers established a positive association between
+living on campus and retention, finding that students with on-campus
+residency tended to be retained at higher rates than commuters. However,
+more recent work complicates this picture. A 2020 mixed-methods study at
+a Midwest university found first-year to second-year retention rates of
+63.21% for commuters and 66.07% for residential students, a difference
+that was not statistically significant, suggesting the residential
+advantage may be smaller than once thought, (Andriano 2020).
+
+Research on Hispanic-Serving Institutions presents a similarly nuanced
+picture. Retention rates at HSIs are slightly higher than national
+averages for all students at institutions of higher education (67%
+versus 62%), despite serving student populations that face structurally
+higher barriers to completion, (Postsecondary National Policy Institute
+2021). Recent research suggests that students at HSIs report a more
+supportive environment and greater levels of satisfaction than peers at
+predominantly white institutions, contributing to higher retention
+through a stronger sense of belonging, (National Center for Education
+Statistics).
+
+What is missing from this literature is a Bayesian treatment of how HSI
+status and commuter status combine. Most existing studies treat each
+factor in isolation or as a frequentist comparison, which is poorly
+suited to the small institution-level samples available within a single
+state.
+
+Based on the existing literature, we hypothesized that the HSI-Commuter
+group would show the lowest retention rates, given that both HSI status
+and commuter status have individually been associated with structural
+challenges to student persistence. We further hypothesized that
+NonHSI-Residential institutions would show the highest retention,
+consistent with the literature on residential advantages and the
+historical performance of well-resourced public flagships.
+
+Our study focuses on three questions:
+
+1.  What are the posterior distributions of first-year retention
+    probability for each of the four institutional groups?
+2.  Does the HSI-Commuter group, which describes UHD and similar
+    institutions, show meaningfully different retention from the other
+    three groups?
+3.  Are these patterns stable across the three most recent cohort years,
+    or do they vary substantially?
 
 ## Setup & data preparation
 
@@ -54,6 +112,7 @@ library(bayesplot)
 library(knitr)
 library(kableExtra)
 library(plotly)
+library(ggridges)
 set.seed(2026)
 ```
 
@@ -111,9 +170,17 @@ n_groups <- length(levels(uni$group))
 uni$group_idx <- as.integer(uni$group)
 ```
 
-In the final table, we have `r ncol(uni)` variables. This includes; the
-school's ID, name, population, commuter and HSI flags, and the cohort
-and retention rate information for the years 2022, 2023, and 2024.
+Our data come from the Integrated Postsecondary Education Data System
+(IPEDS), maintained by the National Center for Education Statistics. We
+extracted institution-level retention data for the 2021, 2022, and 2023
+entering cohorts (measured for retention in fall 2022, 2023, and 2024
+respectively). Our study is restricted to Texas public 4-year
+institutions with positive entering cohort sizes, yielding 38
+institutions. We classified each institution along two dimensions: HSI
+status - institutions with at least 25% Hispanic undergraduate
+enrollment, following the federal designation criterion, and Commuter
+status - institutions with on-campus housing capacity below 25% of total
+undergraduate enrollment, or with no on-campus housing offered.
 
 ## Descriptive Summary
 
@@ -141,8 +208,7 @@ the federal threshold of 25% Hispanic undergraduate enrollment, and 58%
 fewer than 25% on-campus housing capacity. The state-wide average
 retention rate has been remarkably stable across the three cohorts
 examined, ranging from 71.18% to 71.82%. This stability supports
-treating each year as a comparable replication in our subsequent
-analyses.
+treating each year as a comparable replication in our analyses.
 
 # Part 1: Conjugate Beta-Binomial Analysis (base model)
 
@@ -559,6 +625,14 @@ NonHSI-Commuter group shows wide intervals across all years.
 ## Institution-level posteriors / shrinkage
 
 ```{r ins_lvl_shrink_24}
+#| label: fig-side-by-side
+#| fig-cap: "Posterior densities (left) and institution-level shrinkage (right), 2024 cohort"
+#| layout-ncol: 2
+#| column: page
+#| fig-width: 7
+#| fig-height: 5
+#| out-width: "100%"
+
 theta_samples_24 <- posterior_24[, grep("^theta\\[", varnames(posterior_24))]
 theta_draws <- as.matrix(theta_samples_24)
 
@@ -572,16 +646,34 @@ inst_24 <- jags_data_24$institutions %>%
   arrange(group, theta_mean) %>%
   mutate(order_id = row_number())
 
-ggplotly(ggplot(inst_24, aes(x = order_id, color = group)) +
+# Plot 1: Ridgeline
+mu_draws_24 <- as.matrix(posterior_24[, grep("^mu\\[", varnames(posterior_24))])
+colnames(mu_draws_24) <- levels(uni$group)
+
+mu_long <- as.data.frame(mu_draws_24) %>%
+  pivot_longer(everything(), names_to = "group", values_to = "mu")
+
+ridge_plot <- ggplotly(ggplot(mu_long, aes(x = mu, y = group, fill = group)) +
+  geom_density_ridges(alpha = 0.7) +
+  labs(x = expression(mu[g]), y = NULL,
+       title = "Group-level posteriors") +
+  theme_minimal() +
+  theme(legend.position = "none"))
+
+# Plot 2: Shrinkage
+shrink_plot <- ggplotly(ggplot(inst_24, aes(x = order_id, color = group)) +
   geom_point(aes(y = observed), shape = 4, size = 2, alpha = 0.6) +
   geom_point(aes(y = theta_mean), size = 2) +
   geom_errorbar(aes(ymin = theta_lower, ymax = theta_upper), width = 0.2) +
-  labs(x = "Institution (ordered within group by posterior mean)",
+  labs(x = "Institution",
        y = "Retention probability",
-       title = "Shrinkage: posterior means (dots + CI) vs. observed (x), 2024 cohort",
+       title = "Institution-level posteriors",
        color = "Group") +
   theme_minimal() +
-  theme(axis.text.x = element_blank()), tooltip = c("text", "y"))
+  theme(axis.text.x = element_blank(),
+        legend.position = "bottom"))
+
+subplot(ridge_plot, shrink_plot, nrows = 1, margin = 0.05)
 ```
 
 The shrinkage plot displays each institution's observed retention rate
@@ -679,4 +771,19 @@ Points to hit:
 
 # References
 
-IPEDS
+National Center for Education Statistics. (2024). *Integrated
+Postsecondary Education Data System (IPEDS)*. U.S. Department of
+Education, Institute of Education Sciences. <https://nces.ed.gov/ipeds/>
+
+Andriano, B. C. (2020). *Perceptions of commuter students and faculty: A
+mixed methods study on commuter student retention* \[Doctoral
+dissertation, Lindenwood University\]. Digital Commons \@ Lindenwood
+University. <https://digitalcommons.lindenwood.edu/dissertations/187/>
+
+Postsecondary National Policy Institute. (2021). *Hispanic-serving
+institutions* \[Policy primer\].
+<https://pnpi.org/wp-content/uploads/2021/09/HSI-Primer_Updated_September2021.pdf>
+
+Every Learner Everywhere. (2025). *A profile of Hispanic-serving
+institutions*.
+<https://www.everylearnereverywhere.org/resources/a-profile-of-hispanic-serving-institutions/>
