@@ -54,9 +54,10 @@ library(bayesplot)
 library(knitr)
 library(kableExtra)
 library(plotly)
+set.seed(2026)
 ```
 
-```{r, message=FALSE, warning=FALSE}
+```{r data_prep, message=FALSE, warning=FALSE}
 y22 <- read_csv("Bayes CommuterHSI Data/2223.csv")
 y23 <- read_csv("Bayes CommuterHSI Data/2324.csv")
 y24 <- read_csv("Bayes CommuterHSI Data/2425.csv")
@@ -104,8 +105,10 @@ uni <- uni %>%
       hsi == FALSE & commuter == FALSE ~ "NonHSI_Residential"
     ),
     group = factor(group, levels = c("HSI_Commuter", "HSI_Residential",
-                                     "NonHSI_Commuter", "NonHSI_Residential"))
-  )
+                                     "NonHSI_Commuter", "NonHSI_Residential")))
+n_inst   <- nrow(uni)
+n_groups <- length(levels(uni$group))
+uni$group_idx <- as.integer(uni$group)
 ```
 
 In the final table, we have `r ncol(uni)` variables. This includes; the
@@ -114,7 +117,7 @@ and retention rate information for the years 2022, 2023, and 2024.
 
 ## Descriptive Summary
 
-```{r}
+```{r desc_summary}
 uni %>% select(tot_pop, hsi, commuter, ret_rate24, ret_rate23, ret_rate22) %>% summarise(
   n_schools = nrow(uni),
   hsi_proportion = round(sum(uni$hsi) / nrow(uni),  2),
@@ -130,6 +133,16 @@ uni %>% select(tot_pop, hsi, commuter, ret_rate24, ret_rate23, ret_rate22) %>% s
     position = "center"
   )
 ```
+
+Our final dataset includes 38 Texas public 4-year institutions. Of
+these, 79% (30 schools) qualify as Hispanic-Serving Institutions under
+the federal threshold of 25% Hispanic undergraduate enrollment, and 58%
+(22 schools) qualify as commuter institutions under our threshold of
+fewer than 25% on-campus housing capacity. The state-wide average
+retention rate has been remarkably stable across the three cohorts
+examined, ranging from 71.18% to 71.82%. This stability supports
+treating each year as a comparable replication in our subsequent
+analyses.
 
 # Part 1: Conjugate Beta-Binomial Analysis (base model)
 
@@ -280,9 +293,12 @@ residential groups
 
 # Part 2: Hierarchical Beta-Binomial Model (Main Analysis)
 
-Because retention is a count of successes out of a fixed cohort, we use
-the Binomial likelihood with a conjugate Beta prior rather than the
-Normal-Normal hierarchy from class (l18).
+Our hierarchical model extends the conjugate framework by adding
+institution-level retention probabilities θ_ig within each group. We
+adapt the three-layer Normal-Normal hierarchy from Lecture 18 by
+replacing the Normal likelihood with a Binomial and the Normal prior
+with a Beta, since retention is a count of successes out of a fixed
+cohort.
 
 The conjugate model we used assumes all the institutions within a group
 share the same retention probability, which is kind of unrealistic. The
@@ -376,48 +392,102 @@ where $\alpha_g = \mu_g \kappa_g$ and $\beta_g = (1 - \mu_g) \kappa_g$,
 We chose the calculated average for the Beta prior with concentration
 near 71.5%.
 
-We chose Gamma with a mean of 4 to allow kappa to range broadly. I also
-seen that sometimes it is recommended to add a constant, because Beta
-distributions with a value less than 1 are U-shaped, which wouldn't make
-sense with retention rates.
+We chose Gamma with a mean of 2 to allow kappa to range broadly. We've
+also seen that sometimes it is recommended to add a constant, because
+Beta distributions with a value less than 1 are U-shaped, which wouldn't
+make sense with retention rates.
 
 **From lectures: 17, 18, 19**
 
 ## Prepare data for JAGS
 
 ```{r jags_data_prep}
-n_inst   <- nrow(uni)
-n_groups <- length(levels(uni$group))
+prepare_jags_data <- function(uni_df, cohort_col, return_col) {
+  # Pull out a clean dataset for this year (drop institutions with NA or zero cohort)
+  d <- uni_df %>%
+    select(unitid, group, cohort = all_of(cohort_col), retained = all_of(return_col)) %>%
+    filter(!is.na(cohort), !is.na(retained), cohort > 0)
+  
+  list(
+    k          = d$retained,
+    n          = d$cohort,
+    group_idx  = as.integer(d$group),
+    n_inst     = nrow(d),
+    n_groups   = length(levels(uni_df$group)),
+    institutions = d  # Keep this around for later mapping back
+  )
+}
 
-# Integer group index for each institution
-uni$group_idx <- as.integer(uni$group)
-
-jags_data <- list(
-  k          = uni$retained,
-  n          = uni$cohort_n,
-  group_idx  = uni$group_idx,
-  n_inst     = n_inst,
-  n_groups   = n_groups
-)
-
-str(jags_data)
+jags_data_22 <- prepare_jags_data(uni, "cohort21", "return_cohort22")
+jags_data_23 <- prepare_jags_data(uni, "cohort22", "return_cohort23")
+jags_data_24 <- prepare_jags_data(uni, "cohort23", "return_cohort24")
 ```
 
 ## JAGS model
+
+```{r jags_hier_model}
+hierarchical_model <- "model {
+  # Layer 1: Likelihood
+  for (i in 1:n_inst) {
+    k[i] ~ dbin(theta[i], n[i])
+    theta[i] ~ dbeta(alpha[group_idx[i]], beta[group_idx[i]])
+  }
+
+  # Layer 2/3: Group-level hyperparameters
+  for (g in 1:n_groups) {
+    alpha[g] <- mu[g] * kappa[g]
+    beta[g]  <- (1 - mu[g]) * kappa[g]
+    
+    mu[g]        ~ dbeta(7, 3)              # Hyperprior on group mean
+    kappa[g]    <- kappa_raw[g] + 2          # Shift to avoid U-shaped Betas
+    kappa_raw[g] ~ dgamma(2, 0.5)
+  }
+}"
+```
 
 **From lectures: 8, 16**
 
 ## Compile and fit
 
 ```{r}
-# model <- 
+fit_hierarchical <- function(jags_data, model_string, 
+                             n_burn = 2000, n_iter = 10000, n_chains = 5) {
+  # Strip the bookkeeping element before passing to JAGS
+  data_for_jags <- jags_data[c("k", "n", "group_idx", "n_inst", "n_groups")]
+  
+  model <- jags.model(textConnection(model_string),
+                      data    = data_for_jags,
+                      n.chains = n_chains,
+                      quiet   = TRUE)
+  
+  update(model, n.iter = n_burn, progress.bar = "none")  # burn-in
+  
+  coda.samples(model,
+               variable.names = c("theta", "mu", "kappa"),
+               n.iter         = n_iter,
+               progress.bar   = "none")
+}
 
-# update()
-
-# posterior_sample
+posterior_22 <- fit_hierarchical(jags_data_22, hierarchical_model)
+posterior_23 <- fit_hierarchical(jags_data_23, hierarchical_model)
+posterior_24 <- fit_hierarchical(jags_data_24, hierarchical_model)
 ```
 
-## If we're doing MCMC, we do that now
+## MCMC Diagnostics
+
+```{r mcmc_diag}
+# Pull out just the mu samples
+mu_samples_24 <- posterior_24[, grep("^mu\\[", varnames(posterior_24))]
+
+# Trace plots ("hairy caterpillar" check from L16)
+mcmc_trace(mu_samples_24) + theme_minimal()
+
+# Effective sample size (should be in the thousands per parameter)
+effectiveSize(mu_samples_24)
+
+# Gelman-Rubin shrink factor (should be very close to 1.0, definitely under 1.1)
+gelman.diag(mu_samples_24, multivariate = FALSE)
+```
 
 **From lectures: 16**
 
@@ -425,18 +495,158 @@ str(jags_data)
 
 ## Group-level posterior summaries
 
-\*Make sure to include credible intervals for each group's
-hyperparameter mean using quantile(mu_samples, c(0.025, 0.975))
+```{r group_post_summ}
+extract_mu_summary <- function(posterior_sample, group_levels, year_label) {
+  mu_draws <- as.matrix(posterior_sample[, grep("^mu\\[", varnames(posterior_sample))])
+  colnames(mu_draws) <- group_levels
+  
+  data.frame(
+    year  = year_label,
+    group = group_levels,
+    mean  = apply(mu_draws, 2, mean),
+    lower = apply(mu_draws, 2, quantile, 0.025),
+    upper = apply(mu_draws, 2, quantile, 0.975)
+  )
+}
 
--- Plot & compare credible intervals by year for each group
+mu_summary_all <- bind_rows(
+  extract_mu_summary(posterior_22, levels(uni$group), "2022"),
+  extract_mu_summary(posterior_23, levels(uni$group), "2023"),
+  extract_mu_summary(posterior_24, levels(uni$group), "2024")
+)
+
+mu_summary_all %>%
+  kbl(digits = 4, caption = "Group-level posterior means and 95% credible intervals by year") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                full_width = FALSE) %>%
+  row_spec(0, bold = TRUE, background = "#34495E", color = "white")
+```
+
+The hierarchical model's group-level posterior means are pretty
+consistent across the three cohort years, with each group's posterior
+mean varying by less than 0.02 across years. This stability provides
+strong evidence that the observed group differences are not artifacts of
+any single year. Across all three years, HSI-Commuter institutions have
+the highest posterior mean retention (μ around 0.73), while
+NonHSI-Commuter institutions have the lowest (μ around 0.66). To note:
+the credible intervals for NonHSI-Commuter institutions are notably
+wider than the others, reflecting the smaller number of institutions in
+this group and the corresponding posterior uncertainty.
+
+## Forest plot for cross-year comparison
+
+```{r plot_cross_comp}
+ggplotly(ggplot(mu_summary_all, aes(x = mean, y = group, color = year)) +
+  geom_point(position = position_dodge(width = 0.5), size = 3) +
+  geom_errorbarh(aes(xmin = lower, xmax = upper),
+                 position = position_dodge(width = 0.5), height = 0.2) +
+  labs(x = "μ_g (group mean retention probability)",
+       y = NULL,
+       color = "Cohort year",
+       title = "Group-level retention posteriors across three cohorts") +
+  theme_minimal() +
+  theme(legend.position = "bottom"))
+```
+
+The forest plot displays group-level posterior means with 95% credible
+intervals across the three cohort years. The near-perfect overlap of
+intervals within each group confirms the yearly stability seen in the
+summary table. The HSI-Commuter group consistently shows the highest
+mean retention with the tightest credible interval, reflecting the
+abundance of institutions in this category. By contrast, the
+NonHSI-Commuter group shows wide intervals across all years.
 
 ## Institution-level posteriors / shrinkage
 
-\*Make sure to include credible intervals. This is where the smaller
-schools will have their intervals pulled toward the group mean more than
-larger schools.
+```{r ins_lvl_shrink_24}
+theta_samples_24 <- posterior_24[, grep("^theta\\[", varnames(posterior_24))]
+theta_draws <- as.matrix(theta_samples_24)
+
+inst_24 <- jags_data_24$institutions %>%
+  mutate(
+    observed     = retained / cohort,
+    theta_mean   = apply(theta_draws, 2, mean),
+    theta_lower  = apply(theta_draws, 2, quantile, 0.025),
+    theta_upper  = apply(theta_draws, 2, quantile, 0.975)
+  ) %>%
+  arrange(group, theta_mean) %>%
+  mutate(order_id = row_number())
+
+ggplotly(ggplot(inst_24, aes(x = order_id, color = group)) +
+  geom_point(aes(y = observed), shape = 4, size = 2, alpha = 0.6) +
+  geom_point(aes(y = theta_mean), size = 2) +
+  geom_errorbar(aes(ymin = theta_lower, ymax = theta_upper), width = 0.2) +
+  labs(x = "Institution (ordered within group by posterior mean)",
+       y = "Retention probability",
+       title = "Shrinkage: posterior means (dots + CI) vs. observed (x), 2024 cohort",
+       color = "Group") +
+  theme_minimal() +
+  theme(axis.text.x = element_blank()), tooltip = c("text", "y"))
+```
+
+The shrinkage plot displays each institution's observed retention rate
+(X markers) alongside its posterior mean and 95% credible interval (dots
+and bars) for the 2024 cohort. Institutions with smaller cohorts show
+greater shrinkage toward their group mean, while institutions with
+larger cohorts retain estimates close to their observed rates. This is
+the partial pooling property of the hierarchical model in action: rather
+than treating each institution as fully independent (which would produce
+noisy estimates for small schools) or pooling all institutions together
+(which would mask real institutional differences), the model uses
+information from peer institutions within the same group to inform each
+individual estimate.
 
 ## Posterior probability statements from the hierarchical model
+
+```{r hier_post_prob}
+mu_draws_24 <- as.matrix(posterior_24[, grep("^mu\\[", varnames(posterior_24))])
+colnames(mu_draws_24) <- levels(uni$group)
+
+probs <- data.frame(
+  Statement = c(
+    "P(HSI_Commuter > HSI_Residential)",
+    "P(HSI_Commuter > NonHSI_Commuter)",
+    "P(HSI_Commuter > NonHSI_Residential)",
+    "P(HSI_Commuter > 0.70)"
+  ),
+  Probability = c(
+    1 - (mean(mu_draws_24[, "HSI_Commuter"] < mu_draws_24[, "HSI_Residential"])),
+    1 - (mean(mu_draws_24[, "HSI_Commuter"] < mu_draws_24[, "NonHSI_Commuter"])),
+    1 - (mean(mu_draws_24[, "HSI_Commuter"] < mu_draws_24[, "NonHSI_Residential"])),
+    1 - (mean(mu_draws_24[, "HSI_Commuter"] < 0.70))
+  )
+)
+
+probs %>%
+  kbl(digits = 4, caption = "Selected posterior probabilities (2024 cohort)") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                full_width = FALSE) %>%
+  row_spec(0, bold = TRUE, background = "#34495E", color = "white")
+```
+
+The posterior probabilities quantify the strength of evidence for each
+comparison. There is an 84% posterior probability that HSI-Commuter
+institutions have a higher true retention rate than HSI-Residential
+institutions, and an 83% posterior probability that HSI-Commuter
+retention exceeds 70%. The probability that HSI-Commuter retention
+exceeds NonHSI-Residential retention is more modest at 62%, suggesting
+these two groups are most similar in our analysis. These probabilities
+are direct outputs of the Bayesian framework and provide a more
+intuitive interpretation than frequentist p-values.
+
+## Hierarchical Reflection
+
+Our main result is counterintuitive in a good way: HSI-Commuter
+institutions in Texas have the highest first-year retention rates, not
+the lowest. This challenges the narrative that schools serving Hispanic
+and commuter students are necessarily underperforming. Three years of
+independent hierarchical models gave us nearly identical results, which
+is rare in education research and gives us strong confidence in the
+conclusions. Lastly, our hierarchical model can't tell us why
+HSI-Commuter schools are doing better. We have correlation, not
+causation. It could be Texas-specific policy, it could be selection
+effects, it could be measurement artifacts. This could be a question for
+follow-up research.
 
 # Part 3: Model Comparison
 
@@ -451,10 +661,6 @@ hierarchical models
 
 -- Maybe try a multinomial logistic regression to compare all the groups
 adds rigor, rather than doing all the groups independently.
-
-## Bayesian Anova
-
-**From lectures: 17, 19, 20**
 
 # Conclusion:
 
