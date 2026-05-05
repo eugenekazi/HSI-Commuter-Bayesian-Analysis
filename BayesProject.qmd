@@ -23,6 +23,9 @@ format:
           .quarto-title-meta > div {
             text-align: center;
           }
+          p {
+            text-indent: 2em;
+          }
           </style>
   #pdf:
     #toc: true
@@ -557,8 +560,6 @@ gelman.diag(mu_samples_24, multivariate = FALSE)
 
 **From lectures: 16**
 
--- Create MCMC
-
 ## Group-level posterior summaries
 
 ```{r group_post_summ}
@@ -592,12 +593,14 @@ The hierarchical model's group-level posterior means are pretty
 consistent across the three cohort years, with each group's posterior
 mean varying by less than 0.02 across years. This stability provides
 strong evidence that the observed group differences are not artifacts of
-any single year. Across all three years, HSI-Commuter institutions have
-the highest posterior mean retention (μ around 0.73), while
-NonHSI-Commuter institutions have the lowest (μ around 0.66). To note:
-the credible intervals for NonHSI-Commuter institutions are notably
-wider than the others, reflecting the smaller number of institutions in
-this group and the corresponding posterior uncertainty.
+any single year.
+
+Across all three years, HSI-Commuter institutions have the highest
+posterior mean retention (μ around 0.73), while NonHSI-Commuter
+institutions have the lowest (μ around 0.66). To note: the credible
+intervals for NonHSI-Commuter institutions are notably wider than the
+others, reflecting the smaller number of institutions in this group and
+the corresponding posterior uncertainty.
 
 ## Forest plot for cross-year comparison
 
@@ -625,14 +628,6 @@ NonHSI-Commuter group shows wide intervals across all years.
 ## Institution-level posteriors / shrinkage
 
 ```{r ins_lvl_shrink_24}
-#| label: fig-side-by-side
-#| fig-cap: "Posterior densities (left) and institution-level shrinkage (right), 2024 cohort"
-#| layout-ncol: 2
-#| column: page
-#| fig-width: 7
-#| fig-height: 5
-#| out-width: "100%"
-
 theta_samples_24 <- posterior_24[, grep("^theta\\[", varnames(posterior_24))]
 theta_draws <- as.matrix(theta_samples_24)
 
@@ -656,7 +651,7 @@ mu_long <- as.data.frame(mu_draws_24) %>%
 ridge_plot <- ggplotly(ggplot(mu_long, aes(x = mu, y = group, fill = group)) +
   geom_density_ridges(alpha = 0.7) +
   labs(x = expression(mu[g]), y = NULL,
-       title = "Group-level posteriors") +
+       title = "Group-level posterior densities") +
   theme_minimal() +
   theme(legend.position = "none"))
 
@@ -667,7 +662,7 @@ shrink_plot <- ggplotly(ggplot(inst_24, aes(x = order_id, color = group)) +
   geom_errorbar(aes(ymin = theta_lower, ymax = theta_upper), width = 0.2) +
   labs(x = "Institution",
        y = "Retention probability",
-       title = "Institution-level posteriors",
+       title = "Institution-level shrinkage",
        color = "Group") +
   theme_minimal() +
   theme(axis.text.x = element_blank(),
