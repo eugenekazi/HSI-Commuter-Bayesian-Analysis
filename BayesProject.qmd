@@ -299,14 +299,18 @@ kbl(posterior_p1, escape = FALSE, caption = "Posterior (conjugate update)") %>%
 
 **From Lectures: 7, 9**
 
-## Pool the data into groups
+## Pool the data into groups (average retention rate & pooled retention rate)
 
 We would group each and find retained cohort by year using summarize.
 
 ```{r ret_rate summary}
 uni2 = uni %>% select(group, ret_rate22, ret_rate23, ret_rate24)
 uni2 = uni2 %>% group_by(group) %>%  summarize_at(c("ret_rate22", "ret_rate23", "ret_rate24"), mean)
-uni2
+uni2 %>%
+  kbl(digits = 3, caption = "Pooled cohort sizes (n) and retained students (k) by group and year") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                full_width = FALSE) %>%
+  row_spec(0, bold = TRUE, background = "#34495E", color = "white")
 
 uni3 = uni %>% select(group, cohort21, cohort22, cohort23)
 uni3 = uni3 %>% group_by(group) %>%  summarize_at(c( "cohort21", "cohort22", "cohort23"), sum)
@@ -339,7 +343,7 @@ pooled <- uni %>%
     obs_rate_24 = k_24 / n_24
   )
 
-pooled %>% select(n_institutions, obs_rate_22, obs_rate_23, obs_rate_24) %>%
+pooled %>% select(group, n_institutions, obs_rate_22, obs_rate_23, obs_rate_24) %>%
   kbl(digits = 3, caption = "Pooled cohort sizes (n) and retained students (k) by group and year") %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
                 full_width = FALSE) %>%
